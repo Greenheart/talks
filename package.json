@@ -1,0 +1,8 @@
+{
+    "name": "talks",
+    "version": "1.0.0",
+    "description": "A collection of my talks and presentations.",
+    "private": true,
+    "author": "Samuel Plumppu",
+    "license": "MIT"
+}

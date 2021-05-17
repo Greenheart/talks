@@ -20,5 +20,8 @@ const ignoredFolders = ['node_modules', 'dist']
 // Open index.html
 // replace `<!--LINKS-->` with the generated links, separated by year and ordered with newest talks at the top.
 
+// for each year, add <h2>{year}</h2>
+// for each year, add all links with <a href="/talks/"
+
 // generate landing page
     // write result to dist/index.html

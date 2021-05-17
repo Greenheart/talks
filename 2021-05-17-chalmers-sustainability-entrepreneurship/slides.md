@@ -22,7 +22,7 @@ routerMode: hash
 
 <v-click>
 
-## 1. Getting started as a sustainability entrepreneur
+<h2 class="pt-6">1. Getting started as a sustainability entrepreneur</h2>
 
 My journey so far, and what I've learned.
 

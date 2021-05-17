@@ -85,17 +85,26 @@ image: ./images/pexels-michael-block-3225517.jpg
 
 Helps you evaluate and choose the most relevant opportunities. Be curious, explore, and learn!
 
-<v-clicks>
+<v-click>
 
-### Don't live life fully planned.
+**Don't live life fully planned.**
+
+</v-click>
+<v-click>
 
 Do choose a clear direction and always try to focus on finishing a few things before moving on. But it's also important to re-evaluate and to choose different paths.
 
-### How to develop a strong inner compass?
+</v-click>
+<v-click>
+
+**How to develop a strong inner compass?**
+
+</v-click>
+<v-click>
 
 Explore. Have a clear sense of your personal values, visions for the future, and your personal why. We'll get back to this later.
 
-</v-clicks>
+</v-click>
 
 ---
 
@@ -103,7 +112,7 @@ Explore. Have a clear sense of your personal values, visions for the future, and
 
 <v-click>
 
-## What worked for me might not work for you.
+<h2 class="pt-6">What worked for me might not work for you.</h2>
 
 But some things are clear: Keep it simple, start experimenting, get feedback from people around you, iterate and improve as you learn more.
 

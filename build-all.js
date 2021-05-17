@@ -1,9 +1,24 @@
-import fs from 'fs/promises'
+import { readdirSync, statSync, rmSync, existsSync } from 'fs'
+import { resolve } from 'path'
 
-const ignoredFolders = ['node_modules', 'dist']
+const ignoredFolders = ['node_modules', 'dist', '.git']
+const cwd = process.cwd()
+
+function getAllTalks(path) {
+    return readdirSync(path)
+        .filter(file => !ignoredFolders.includes(file) && statSync(path + '/' + file).isDirectory())
+}
+
 
 // delete the previous root dist folder for all talks and previous builds
-// read all directories except a few special ones, like node_modules and dist
+const distPath = resolve(cwd, 'dist')
+if (existsSync(distPath)) {
+    rmSync(distPath, { recursive: true })
+}
+
+const talks = getAllTalks(cwd)
+console.log(talks)
+
 
 // For folder in talks
     // execute each in parallell

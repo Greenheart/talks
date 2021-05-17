@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "A collection of my talks and presentations.",
     "private": true,
+    "type": "module",
     "author": "Samuel Plumppu",
     "scripts": {
         "build": "node build-all.js",

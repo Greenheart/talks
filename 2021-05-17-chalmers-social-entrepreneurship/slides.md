@@ -148,6 +148,48 @@ image: ./images/pexels-fauxels-3183165.jpg
 </div>
 
 ---
+layout: image-right
+image: ./images/pexels-michael-block-3225517.jpg
+---
+
+# Exploring our visions for the future
+
+- What does a sustainable future mean to me?
+
+- What do I value in life?
+
+- How can I live a good life while also making a good impact on the world around us?
+
+---
+layout: image-right
+image: ./images/pexels-michael-block-3225517.jpg
+---
+
+# Short exercise to get in the right mood
+
+---
+layout: image-right
+image: ./images/pexels-michael-block-3225517.jpg
+---
+
+# Breakout room discussions
+
+10 min discussion. Take turns and ask follow-up questions. 5 min each.
+
+<v-click>
+
+<h2 class="pt-8">1. What's your vision for a sustainable future?</h2>
+
+</v-click>
+
+<v-click>
+
+<h2 class="pt-8">2. What unique skills and perspectives do you want to use when co-creating a sustainable future?</h2>
+
+</v-click>
+
+
+---
 layout: intro-image
 image: ./images/pexels-frederico-erthal-3571576.jpg
 ---
@@ -170,5 +212,55 @@ image: ./images/pexels-fauxels-3183165.jpg
   <p>Learn how I evaluate and turn new project ideas into concrete tasks.</p>
 </div>
 
+---
+layout: image-right
+image: ./images/pexels-michael-block-3225517.jpg
+---
+
+# Before staring a new project
+
+<v-clicks>
+
+- Potential impact
+
+- Time available
+
+- Energy available
+
+- Re-evaluate other projects and change your focus?
+
+</v-clicks>
 
 
+---
+layout: image-right
+image: ./images/pexels-lumn-167698.jpg
+---
+
+# A real world case
+
+## Sustainable Forestry in Sweden
+
+<v-clicks>
+
+- Potential impact
+
+- Time available
+
+- Energy available
+
+- Re-evaluate other projects and change your focus?
+
+</v-clicks>
+
+
+---
+layout: intro-image
+image: ./images/pexels-frederico-erthal-3571576.jpg
+---
+
+# Thank you!
+
+Let's connect and co-create a sustainable future!
+- samuel@plumppu.se
+- https://hackforfuture.org

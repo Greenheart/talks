@@ -4,5 +4,13 @@
     "description": "A collection of my talks and presentations.",
     "private": true,
     "author": "Samuel Plumppu",
-    "license": "MIT"
+    "scripts": {
+        "build": "node build-all.js",
+        "publish": "gh-pages -d dist",
+        "serve": "sirv dist"
+    },
+    "devDependencies": {
+        "gh-pages": "^3.1.0",
+        "sirv-cli": "^1.0.11"
+    }
 }

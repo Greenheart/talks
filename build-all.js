@@ -1,23 +1,33 @@
-import { readdirSync, statSync, rmSync, existsSync } from 'fs'
+import { existsSync, statSync } from 'fs'
+import { readdir, rm } from 'fs/promises'
 import { resolve } from 'path'
 
 const ignoredFolders = ['node_modules', 'dist', '.git']
 const cwd = process.cwd()
 
-function getAllTalks(path) {
-    return readdirSync(path)
+async function getAllTalks(path) {
+    const filesAndFolders = await readdir(path)
+    return filesAndFolders
         .filter(file => !ignoredFolders.includes(file) && statSync(path + '/' + file).isDirectory())
 }
 
 
 // delete the previous root dist folder for all talks and previous builds
 const distPath = resolve(cwd, 'dist')
-if (existsSync(distPath)) {
-    rmSync(distPath, { recursive: true })
+
+async function deleteOldBuild(path) {
+    if (existsSync(path)) {
+        await rm(path, { recursive: true })
+    }
 }
 
-const talks = getAllTalks(cwd)
-console.log(talks)
+async function buildAll() {
+    await deleteOldBuild(distPath)
+    const talks = await getAllTalks(cwd)
+    console.log(talks)
+}
+
+buildAll()
 
 
 // For folder in talks

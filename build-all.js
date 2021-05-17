@@ -1,11 +1,21 @@
+import { exec } from 'promisify-child-process'
+
 import { existsSync, statSync } from 'fs'
-import { readdir, rm, readFile, writeFile, mkdir } from 'fs/promises'
+import { readdir, rm, readFile, writeFile, mkdir, rename } from 'fs/promises'
 import { resolve } from 'path'
 
 const ignoredFolders = ['node_modules', 'dist', '.git']
 const cwd = process.cwd()
 const distPath = resolve(cwd, 'dist')
 
+/**
+ * Get the names of all talks, based on directory names in the project root.
+ *
+ * Ignores unrelated directories and all files.
+ * 
+ * @param {string} path the path where to get all talks from.
+ * @returns {string[]} Array with names of all talks.
+ */
 async function getAllTalks(path) {
     const filesAndFolders = await readdir(path)
     return filesAndFolders.filter(
@@ -15,12 +25,23 @@ async function getAllTalks(path) {
     )
 }
 
+/**
+ * Delete old build directory.
+ * 
+ * @param {string} path Path to the old build directory.
+ */
 async function deleteOldBuild(path) {
     if (existsSync(path)) {
         await rm(path, { recursive: true })
     }
 }
 
+/**
+ * Group all talks by year into an object.
+ * 
+ * @param {string[]} talks Array of directory names matching the talks to build.
+ * @returns {Map<string, string[]>} Object with all talks grouped by year.
+ */
 function getTalksByYear(talks) {
     return talks.reduce((years, talk) => {
         const year = talk.slice(0, 4)
@@ -29,11 +50,23 @@ function getTalksByYear(talks) {
     }, {})
 }
 
+/**
+ * Get HTML string with links for a given year.
+ * 
+ * @param {[string, string[]]} linksForYear Entry with all links for a given year.
+ * @returns {string} HTML string with links for a given year.
+ */
 function getLinksForYear([year, talks]) {
     const linksForYear = talks.map(talk => `\n    <a href="/${talk}/">${talk}</a>`)
     return `<h2>${year}</h2>${linksForYear}`
 }
 
+/**
+ * Generate a simple index.html page to list all talks, grouped by year.
+ * 
+ * @param {string[]} talks Array of directory names matching the talks to build.
+ * @returns {Promise} Promise resolving when the index.html file has been written to storage.
+ */
 async function buildIndexPage(talks) {
     const inputHTML = await readFile(resolve(cwd, 'index.html'), { encoding: 'utf-8' })
 
@@ -43,35 +76,55 @@ async function buildIndexPage(talks) {
     await writeFile(resolve(distPath, 'index.html'), outputHTML, { encoding: 'utf-8' })
 }
 
+/**
+ * Create a directory if it doesn't exist.
+ * 
+ * @param {string} path The full path to find the directory, including the name of the directory.
+ * @param {string} name The name of the directory to create if it doesn't exist.
+ */
+async function ensureDirExists(path, name) {
+    if (!existsSync(path)) {
+        await mkdir(name, { recursive: true })
+    }
+}
+
+const pluralize = (count, noun, suffix = 's') =>
+    `${count} ${noun}${count !== 1 ? suffix : ''}`
+
+/**
+ * Build all talks and move them to the right place in the build output folder.
+ * 
+ * @param {string[]} talks Array of directory names matching the talks to build.
+ * @returns {Promise[]} Array of promises for each build happening concurrently.
+ */
+async function buildAllTalks(talks) {
+    console.log(`Building ${pluralize(talks.length, 'talk')}...`)
+    return Promise.all(talks.map(async talk => {
+        const { stderr, stdout } = await exec(`cd ${talk} && npm run build`)
+
+        if (stderr) {
+            console.error(`❌ ${talk}\n\n${stderr}`)
+        }
+        if (stdout) {
+            console.log(`✅ ${talk}`)
+        }
+        
+        // TODO: copy build output to resolve(distPath, talk)
+        return rename(resolve(cwd, talk, 'dist'), resolve(distPath, talk))
+    }))
+}
+
+/**
+ * Main script.
+ */
 async function buildAll() {
     await deleteOldBuild(distPath)
     const talks = await getAllTalks(cwd)
     console.log(talks)
 
-    if (!existsSync(distPath)) {
-        await mkdir(`dist`, { recursive: true })
-    }
-
+    await ensureDirExists(distPath, 'dist')
+    await buildAllTalks(talks)
     await buildIndexPage(talks)
 }
 
 buildAll()
-
-// For folder in talks
-// execute each in parallell
-// build talk with local build script
-// wait for it to finish
-// create folder with same name as the talk in the root dist folder.
-// copy contents of talk dist folder into root dist folder
-
-// when all subprocesses have finished, Promise.all()
-// print status and how many talks were built
-
-// Open index.html
-// replace `<!--LINKS-->` with the generated links, separated by year and ordered with newest talks at the top.
-
-// for each year, add <h2>{year}</h2>
-// for each year, add all links with <a href="/talks/"
-
-// generate landing page
-// write result to dist/index.html

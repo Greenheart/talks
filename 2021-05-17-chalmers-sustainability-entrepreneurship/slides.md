@@ -2,6 +2,7 @@
 theme: apple-basic
 layout: intro-image
 image: ./images/india-solar-woman.jpg
+routerMode: hash
 ---
 
 <div class="absolute top-10">

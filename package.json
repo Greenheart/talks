@@ -7,6 +7,7 @@
     "author": "Samuel Plumppu",
     "scripts": {
         "build": "node build-all.js",
+        "prepublish": "npm run build",
         "publish": "gh-pages -d dist",
         "serve": "sirv dist"
     },

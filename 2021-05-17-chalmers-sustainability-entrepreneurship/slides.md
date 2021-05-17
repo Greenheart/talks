@@ -7,7 +7,7 @@ routerMode: hash
 
 <div class="absolute top-10">
   <span class="font-700">
-    Samuel Plumppu, 2021-05-17
+    Samuel Plumppu | 2021-05-17
   </span>
 </div>
 
@@ -15,6 +15,8 @@ routerMode: hash
   <h1>Getting started as a sustainability entrepreneur</h1>
   <p>through exploration and co-creation</p>
 </div>
+
+<p class="absolute top-10 right-10 text-[8px]">Photo by Abbie Trayler-Smith / Panos </p>
 
 ---
 
@@ -274,3 +276,18 @@ image: ./images/pexels-frederico-erthal-3571576.jpg
 Let's connect and co-create a sustainable future!
 - samuel@plumppu.se
 - https://hackforfuture.org
+
+
+---
+
+<h1 class="pb-6">Credits</h1>
+
+[Solar Power in Orissa - Abbie Trayler-Smith / Panos (CC)](https://climatevisuals.org/asset/?st=b36a1d749a92addde7f23e0574558b64c023f677)
+
+[Top View Photo of People Having a Meeting - fauxels (Pexels)](https://www.pexels.com/photo/top-view-photo-of-people-having-a-meeting-3183165/)
+
+[Aerial Photography of Road Near Mountains - Frederico Erthal (Pexels)](https://www.pexels.com/photo/aerial-photography-of-road-near-mountains-3571576/)
+
+[Photo Of Stream During Daytime - Michael Block (Pexels)](https://www.pexels.com/photo/photo-of-stream-during-daytime-3225517/)
+
+[Green Leaf Trees on Forest - Lum3n (Pexels)](https://www.pexels.com/photo/green-leaf-trees-on-forest-167698/)

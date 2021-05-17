@@ -11,6 +11,7 @@ A collection of my talks and presentations.
 - Remove Netlify and Vercel config.
 - Set `routerMode: hash` in the first frontmatter of `slides.md`, to configure the router to work well with page reloads for static deployments.
 - Update the npm `build` script for the talk to include correct basepath: `"build": "slidev build --base /$(basename \"$PWD\")/",`
+- Add final slide with image credits. See previous talks for formatting examples.
 
 ## Scripts
 

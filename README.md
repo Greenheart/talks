@@ -7,6 +7,7 @@ A collection of my talks and presentations.
 ## Prepare a new presentation
 
 - Create a new [Slidev](https://sli.dev/) presentation as a subdirectory in this repo.
+- Make sure to name the directory for the talk with the format `YYYY-MM-DD-title-of-talk`, to ensure automated build process works as expected.
 - Remove Netlify and Vercel config.
 - Update the npm `build` script for the talk to include correct basepath: `"build": "slidev build --base /$(basename \"$PWD\")/",`
 

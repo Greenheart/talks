@@ -1,7 +1,6 @@
 import { exec } from 'promisify-child-process'
 
-import { existsSync, statSync } from 'fs'
-import { readdir, rm, readFile, writeFile, mkdir, rename, copyFile } from 'fs/promises'
+import { readdir, rm, readFile, writeFile, mkdir, rename, copyFile, stat } from 'fs/promises'
 import { resolve } from 'path'
 
 const ignoredFolders = ['node_modules', 'dist', '.git']
@@ -18,12 +17,16 @@ const distPath = resolve(cwd, 'dist', basePath)
  * @returns {string[]} Array with names of all talks.
  */
 async function getAllTalks(path) {
-    const filesAndFolders = await readdir(path)
-    return filesAndFolders.filter(
-        (file) =>
-            !ignoredFolders.includes(file) &&
-            statSync(path + '/' + file).isDirectory()
+    const filesAndFolders = (await readdir(path)).filter(entry => !ignoredFolders.includes(entry))
+
+    // Async filter function: https://stackoverflow.com/a/47095184/4183985
+    const shouldKeepFolder = await Promise.all(
+        filesAndFolders.map(
+            async (entry) => (await stat(path + '/' + entry)).isDirectory()
+        )
     )
+
+    return filesAndFolders.filter((_, index) => !!shouldKeepFolder[index])
 }
 
 /**
@@ -32,8 +35,10 @@ async function getAllTalks(path) {
  * @param {string} path Path to the old build directory.
  */
 async function deleteOldBuild(path) {
-    if (existsSync(path)) {
+    try {
         await rm(path, { recursive: true })
+    } catch (e) {
+        console.error(e)
     }
 }
 
@@ -80,12 +85,13 @@ async function buildIndexPage(talks) {
 /**
  * Create a directory if it doesn't exist.
  * 
- * @param {string} path The full path to find the directory, including the name of the directory.
- * @param {string} name The name of the directory to create if it doesn't exist.
+ * @param {string} path The path of the directory to create if it doesn't exist.
  */
-async function ensureDirExists(path, name) {
-    if (!existsSync(path)) {
-        await mkdir(name, { recursive: true })
+async function ensureDirExists(path) {
+    try {
+        await mkdir(path, { recursive: true })
+    } catch (e) {
+        console.error(e)
     }
 }
 
@@ -129,7 +135,7 @@ async function buildAll() {
     const [talks] = await Promise.all([getAllTalks(cwd), deleteOldBuild(distPath)])
     console.log(talks)
 
-    await ensureDirExists(distPath, resolve('dist', basePath))
+    await ensureDirExists(distPath)
     await Promise.all([buildAllTalks(talks), buildIndexPage(talks), copyRedirectPage(talks)])
 }
 

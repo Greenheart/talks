@@ -16,7 +16,7 @@ routerMode: hash
   <p>through exploration and co-creation</p>
 </div>
 
-<p class="absolute top-10 right-10 text-[8px]">Photo by Abbie Trayler-Smith / Panos </p>
+<p class="absolute top-10 right-10 text-[10px] !m-0">Photo by Abbie Trayler-Smith / Panos </p>
 
 ---
 

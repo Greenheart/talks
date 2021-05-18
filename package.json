@@ -8,7 +8,7 @@
     "scripts": {
         "build": "node build-all.js",
         "prepublish": "npm run build",
-        "publish": "gh-pages -d dist",
+        "publish": "gh-pages -d dist/talks",
         "serve": "sirv dist"
     },
     "devDependencies": {

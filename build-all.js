@@ -6,7 +6,8 @@ import { resolve } from 'path'
 
 const ignoredFolders = ['node_modules', 'dist', '.git']
 const cwd = process.cwd()
-const distPath = resolve(cwd, 'dist')
+const basePath = 'talks'
+const distPath = resolve(cwd, 'dist', basePath)
 
 /**
  * Get the names of all talks, based on directory names in the project root.
@@ -57,7 +58,7 @@ function getTalksByYear(talks) {
  * @returns {string} HTML string with links for a given year.
  */
 function getLinksForYear([year, talks]) {
-    const linksForYear = talks.map(talk => `\n    <a href="/${talk}/">${talk}</a>`)
+    const linksForYear = talks.map(talk => `\n    <a href="/${basePath}/${talk}/">${talk}</a>`)
     return `<h2>${year}</h2>${linksForYear}`
 }
 
@@ -122,7 +123,7 @@ async function buildAll() {
     const talks = await getAllTalks(cwd)
     console.log(talks)
 
-    await ensureDirExists(distPath, 'dist')
+    await ensureDirExists(distPath, resolve('dist', basePath))
     await buildAllTalks(talks)
     await buildIndexPage(talks)
 }

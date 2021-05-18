@@ -1,7 +1,7 @@
 import { exec } from 'promisify-child-process'
 
 import { existsSync, statSync } from 'fs'
-import { readdir, rm, readFile, writeFile, mkdir, rename } from 'fs/promises'
+import { readdir, rm, readFile, writeFile, mkdir, rename, copyFile } from 'fs/promises'
 import { resolve } from 'path'
 
 const ignoredFolders = ['node_modules', 'dist', '.git']
@@ -116,16 +116,21 @@ async function buildAllTalks(talks) {
 }
 
 /**
+ * Copy the redirect script used to simplify local testing.
+ */
+async function copyRedirectPage() {
+    return copyFile('redirect.html', resolve(distPath, '..', 'index.html'))
+}
+
+/**
  * Main script.
  */
 async function buildAll() {
-    await deleteOldBuild(distPath)
-    const talks = await getAllTalks(cwd)
+    const [talks] = await Promise.all([getAllTalks(cwd), deleteOldBuild(distPath)])
     console.log(talks)
 
     await ensureDirExists(distPath, resolve('dist', basePath))
-    await buildAllTalks(talks)
-    await buildIndexPage(talks)
+    await Promise.all([buildAllTalks(talks), buildIndexPage(talks), copyRedirectPage(talks)])
 }
 
 buildAll()

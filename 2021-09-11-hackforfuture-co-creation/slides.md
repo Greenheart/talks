@@ -3,18 +3,17 @@ theme: apple-basic
 layout: intro-image
 image: ./images/india-solar-woman.jpg
 routerMode: hash
-colorSchema: 'light'
+colorSchema: light
 ---
 
 <div class="absolute top-10">
   <span class="font-700">
-    Samuel Plumppu | 2021-05-17
+    Samuel Plumppu | 2021-09-11
   </span>
 </div>
 
 <div class="absolute bottom-10">
-  <h1>Getting started as a sustainability entrepreneur</h1>
-  <p>through exploration and co-creation</p>
+  <h1>Co-creating Stories for a Sustainable Future</h1>
 </div>
 
 <p class="absolute top-10 right-10 text-[10px] !m-0">Photo by Abbie Trayler-Smith / Panos </p>
@@ -25,9 +24,9 @@ colorSchema: 'light'
 
 <v-click>
 
-<h2 class="pt-6">1. Getting started as a sustainability entrepreneur</h2>
+<h2 class="pt-6">1. Sustainability entrepreneurship as a framework for meaning in life</h2>
 
-My journey so far, and what I've learned.
+Related to our discussion about determinism and agency.
 
 </v-click>
 
@@ -35,33 +34,17 @@ My journey so far, and what I've learned.
 
 ## 2. Let's co-create a sustainable future!
 
-A workshop about exporing our visions for the future - and how we can create it together.
+Explore our visions for the future - and how we can create them together.
 
 </v-click>
 
 <v-click>
 
-## 3. Practical steps to research and start a new project
+## 3. Miro workshop: Stories
 
-Learn how I evaluate and turn new project ideas into concrete tasks.
+Let's brainstorm and write stories to inspire more people to reflect, grow and act.
 
 </v-click>
-
----
-layout: image-right
-image: ./images/pexels-michael-block-3225517.jpg
----
-
-# My journey so far
-
-<v-clicks>
-
-- freeCodeCamp.org - learn programming for free.
-- Swedish climate movement
-- WeDontHaveTime.org - developing the world's largest social network for climate action.
-- hackforfuture.org - a creative community of entrepreneurs, developers and designers working on open source solutions for a sustainable future.
-
-</v-clicks>
 
 ---
 layout: image-right
@@ -70,13 +53,15 @@ image: ./images/pexels-michael-block-3225517.jpg
 
 # Finding your way
 
-Life is like a river - explore different streams and find what suits you.
+<v-clicks>
 
-<v-click>
+<p class="pt-8">We need to fill life with meaning. Become a conscious agent.</p>
+
+Life is like a river - explore different streams and find what suits you.
 
 The same with entrepreneurship - explore opportunities that come up, but stay focused to make sure you work in the direction you want.
 
-</v-click>
+</v-clicks>
 
 
 ---
@@ -115,9 +100,9 @@ Explore. Have a clear sense of your personal values, visions for the future, and
 
 <v-click>
 
-<h2 class="pt-6">What worked for me might not work for you.</h2>
+<h2 class="pt-6">Experiment. Learn. Grow.</h2>
 
-But some things are clear: Keep it simple, start experimenting, get feedback from people around you, iterate and improve as you learn more.
+Keep it simple, start experimenting, get feedback from people around you, iterate and improve as you learn more.
 
 </v-click>
 <v-click>
@@ -157,7 +142,7 @@ image: ./images/pexels-fauxels-3183165.jpg
 
 <div class="absolute bottom-10 filter drop-shadow-xl text-white bg-black bg-opacity-50 p-4">
   <h1>Let's co-create a sustainable future!</h1>
-  <p>A workshop about exporing our visions for the future - and how we can create it together.</p>
+  <p>Explore our visions for the future - and how we can create them together.</p>
 </div>
 
 ---
@@ -167,11 +152,14 @@ image: ./images/pexels-michael-block-3225517.jpg
 
 # Exploring our visions for the future
 
+<p class="pt-8 pb-4 font-bold">Take 10 minutes to write your individual reflections. Then we'll have a group sharing.</p>
+
 - What does a sustainable future mean to me?
 
 - What do I value in life?
 
 - How can I live a good life while also making a good impact on the world around us?
+
 
 ---
 layout: image-right
@@ -185,13 +173,13 @@ layout: image-right
 image: ./images/pexels-michael-block-3225517.jpg
 ---
 
-# Breakout room discussions
+# Group discussions
 
-10 min discussion. Take turns and ask follow-up questions. 5 min each.
+<p class="pt-8">10 min discussion. Take turns and ask follow-up questions. 5 min each.</p>
 
 <v-click>
 
-<h2 class="pt-8">1. What's your vision for a sustainable future?</h2>
+<h2>1. What's your vision for a sustainable future?</h2>
 
 </v-click>
 
@@ -221,8 +209,8 @@ image: ./images/pexels-fauxels-3183165.jpg
 </div>
 
 <div class="absolute bottom-10 filter drop-shadow-xl text-white bg-black bg-opacity-50 p-4">
-  <h1>Practical steps to research and start a new project</h1>
-  <p>Learn how I evaluate and turn new project ideas into concrete tasks.</p>
+  <h1>Miro workshop: Stories</h1>
+  <p>Let's brainstorm and write stories to inspire more people to reflect, grow and act.</p>
 </div>
 
 ---
@@ -230,52 +218,11 @@ layout: image-right
 image: ./images/pexels-michael-block-3225517.jpg
 ---
 
-# Before staring a new project
-
-<v-clicks>
-
-- Potential impact
-
-- Time available
-
-- Energy available
-
-- Re-evaluate other projects and change your focus?
-
-</v-clicks>
-
-
----
-layout: image-right
-image: ./images/pexels-lumn-167698.jpg
----
-
-# A real world case
-
-## Sustainable Forestry in Sweden
-
-<v-clicks>
-
-- Potential impact
-
-- Time available
-
-- Energy available
-
-- Re-evaluate other projects and change your focus?
-
-</v-clicks>
-
-
----
-layout: intro-image
-image: ./images/pexels-frederico-erthal-3571576.jpg
----
 
 # Thank you!
 
 Let's connect and co-create a sustainable future!
-- samuel@plumppu.se
+- https:/samuelplumppu.se
 - https://hackforfuture.org
 
 

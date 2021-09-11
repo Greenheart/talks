@@ -275,7 +275,7 @@ image: ./images/pexels-frederico-erthal-3571576.jpg
 # Thank you!
 
 Let's connect and co-create a sustainable future!
-- samuel@plumppu.se
+- https://samuelplumppu.se
 - https://hackforfuture.org
 
 

@@ -222,7 +222,7 @@ image: ./images/pexels-michael-block-3225517.jpg
 # Thank you!
 
 Let's connect and co-create a sustainable future!
-- https:/samuelplumppu.se
+- https://samuelplumppu.se
 - https://hackforfuture.org
 
 

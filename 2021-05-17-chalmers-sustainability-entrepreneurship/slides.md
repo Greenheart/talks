@@ -171,7 +171,7 @@ image: ./images/pexels-michael-block-3225517.jpg
 
 - What do I value in life?
 
-- How can I live a good life while also making a good impact on the world around us?
+- How can I live a good life while also making a good impact on the world around me?
 
 ---
 layout: image-right

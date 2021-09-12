@@ -12,8 +12,8 @@
         "serve": "sirv dist"
     },
     "devDependencies": {
-        "gh-pages": "^3.1.0",
+        "gh-pages": "^3.2.3",
         "promisify-child-process": "^4.1.1",
-        "sirv-cli": "^1.0.11"
+        "sirv-cli": "^1.0.14"
     }
 }

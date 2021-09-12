@@ -75,7 +75,7 @@ function getTalksByYear(talks) {
 function getLinksForYear([year, talks]) {
     const linksForYear = talks.map(
         (talk) => `\n    <a href="/${basePath}/${talk}/">${talk}</a>`
-    )
+    ).join('\n')
     return `<h2>${year}</h2>${linksForYear}`
 }
 

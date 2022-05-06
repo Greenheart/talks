@@ -11,7 +11,7 @@ import {
 } from 'fs/promises'
 import { resolve } from 'path'
 
-const ignoredFolders = ['node_modules', 'dist', '.git']
+const ignoredFolders = ['node_modules', 'dist', '.git', '.vscode']
 const cwd = process.cwd()
 const basePath = 'talks'
 const distPath = resolve(cwd, 'dist', basePath)
@@ -26,14 +26,14 @@ const distPath = resolve(cwd, 'dist', basePath)
  */
 async function getAllTalks(path) {
     const filesAndFolders = (await readdir(path)).filter(
-        (entry) => !ignoredFolders.includes(entry)
+        (entry) => !ignoredFolders.includes(entry),
     )
 
     // Async filter function: https://stackoverflow.com/a/47095184/4183985
     const shouldKeepFolder = await Promise.all(
         filesAndFolders.map(async (entry) =>
-            (await stat(path + '/' + entry)).isDirectory()
-        )
+            (await stat(path + '/' + entry)).isDirectory(),
+        ),
     )
 
     return filesAndFolders.filter((_, index) => !!shouldKeepFolder[index])
@@ -73,9 +73,9 @@ function getTalksByYear(talks) {
  * @returns {string} HTML string with links for a given year.
  */
 function getLinksForYear([year, talks]) {
-    const linksForYear = talks.map(
-        (talk) => `\n    <a href="/${basePath}/${talk}/">${talk}</a>`
-    ).join('\n')
+    const linksForYear = talks
+        .map((talk) => `\n    <a href="/${basePath}/${talk}/">${talk}</a>`)
+        .join('\n')
     return `<h2>${year}</h2>${linksForYear}`
 }
 
@@ -135,7 +135,7 @@ async function buildAllTalks(talks) {
 
             // TODO: copy build output to resolve(distPath, talk)
             return rename(resolve(cwd, talk, 'dist'), resolve(distPath, talk))
-        })
+        }),
     )
 }
 

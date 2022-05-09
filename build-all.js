@@ -126,7 +126,9 @@ async function buildAllTalks(talks) {
     console.log(`Building ${pluralize(talks.length, 'talk')}...`)
     return Promise.all(
         talks.map(async (talk) => {
-            const { stderr, stdout } = await exec(`cd ${talk} && npm run build`)
+            const { stderr, stdout } = await exec(
+                `cd ${talk} && npm run build -- --base /talks/${talk}/`,
+            )
 
             if (stderr) {
                 console.error(`❌ ${talk}\n\n${stderr}`)
@@ -160,9 +162,9 @@ async function buildAll() {
     await ensureDirExists(distPath)
     await Promise.all([
         buildAllTalks(talks),
+        // These are only needed when deploying separately
         buildIndexPage(talks),
         copyRedirectPage(talks),
-        // TODO: Only build IndexPage if this should be deployed separately
         // TODO: Remove _redirect file for each build
         // TODO: Rewrite urls starting with `./images/*` to use the full basepath provided during build
     ])

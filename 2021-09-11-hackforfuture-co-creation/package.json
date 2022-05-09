@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --base /talks/$(basename \"$PWD\")/",
+    "build": "slidev build",
     "export": "slidev export"
   },
   "dependencies": {

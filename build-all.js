@@ -90,7 +90,9 @@ async function buildIndexPage(talks) {
         encoding: 'utf-8',
     })
 
-    const links = Object.entries(getTalksByYear(talks)).map(getLinksForYear)
+    const links = Object.entries(getTalksByYear(talks))
+        .map(getLinksForYear)
+        .join('\n')
     const outputHTML = inputHTML.replace('<!--LINKS-->', links)
 
     await writeFile(resolve(distPath, 'index.html'), outputHTML, {
@@ -133,7 +135,6 @@ async function buildAllTalks(talks) {
                 console.log(`✅ ${talk}`)
             }
 
-            // TODO: copy build output to resolve(distPath, talk)
             return rename(resolve(cwd, talk, 'dist'), resolve(distPath, talk))
         }),
     )
@@ -161,6 +162,9 @@ async function buildAll() {
         buildAllTalks(talks),
         buildIndexPage(talks),
         copyRedirectPage(talks),
+        // TODO: Only build IndexPage if this should be deployed separately
+        // TODO: Remove _redirect file for each build
+        // TODO: Rewrite urls starting with `./images/*` to use the full basepath provided during build
     ])
 }
 

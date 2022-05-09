@@ -1,4 +1,6 @@
 ---
+title: 'Getting started as a sustainability entrepreneur'
+titleTemplate: '%s'
 theme: apple-basic
 layout: intro-image
 image: ./images/india-solar-woman.jpg

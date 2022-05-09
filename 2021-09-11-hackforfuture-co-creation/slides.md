@@ -1,4 +1,6 @@
 ---
+title: 'Co-creating Stories for a Sustainable Future'
+titleTemplate: '%s'
 theme: apple-basic
 layout: intro-image
 image: ./images/india-solar-woman.jpg

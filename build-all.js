@@ -91,6 +91,7 @@ async function buildIndexPage(talks) {
 
     const links = Object.entries(getTalksByYear(talks))
         .map(getLinksForYear)
+        .reverse()
         .join('\n')
     const outputHTML = inputHTML.replace('<!--LINKS-->', links)
 
@@ -180,4 +181,4 @@ async function buildAll(includeHelperFiles = false) {
     await Promise.all(buildTasks)
 }
 
-buildAll()
+buildAll(true)

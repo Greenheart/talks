@@ -9,7 +9,6 @@ import {
     stat,
 } from 'fs/promises'
 import { resolve } from 'path'
-import fastGlob from 'fast-glob'
 
 const ignoredFolders = ['node_modules', 'dist', '.git', '.vscode']
 const cwd = process.cwd()
@@ -137,41 +136,10 @@ async function buildAllTalks(talks) {
             }
             if (stdout) {
                 console.log(`✅ ${talk}`)
-                await Promise.all([
-                    useAbsoluteAssetURLs(distPath, talk),
-                    removeUnwantedFiles(distPath, talk),
-                ])
+                await removeUnwantedFiles(distPath, talk)
             }
         }),
     )
-}
-
-/**
- * In order to deploy talks as part of another website, it's important to use absolute URLs instead of relative ones
- */
-async function useAbsoluteAssetURLs(distPath, talk) {
-    const scriptPaths = await fastGlob(
-        `${distPath}/${talk}/assets/{vendor,index}.*.js`,
-    )
-
-    // Backwards compatibility for talks using old versions of slidev
-    const script =
-        scriptPaths.find((p) => p.includes('vendor')) ?? scriptPaths[0]
-    const rawCode = await readFile(script, { encoding: 'utf-8' })
-    if (rawCode.includes('./images/')) {
-        // Replace relative asset URLs with absolute ones to work for the deployment
-        const withAbsolutePath = rawCode.replace(
-            /\.\/images\//g,
-            `/talks/${talk}/images/`,
-        )
-
-        await writeFile(script, withAbsolutePath, { encoding: 'utf-8' })
-    } else {
-        throw new Error(
-            '[build-all-talks]: No asset URL present in script file ',
-            script,
-        )
-    }
 }
 
 const UNWANTED_FILES = ['_redirects', '404.html']
@@ -192,9 +160,10 @@ async function copyRedirectPage() {
 }
 
 /**
- * Main script.
+ * Build all talks and optionally include helper files to aid local development and deployment to GitHub Pages
+ * @param {boolean} includeHelperFiles
  */
-async function buildAll() {
+async function buildAll(includeHelperFiles = false) {
     const [talks] = await Promise.all([
         getAllTalks(cwd),
         deleteOldBuild(distPath),
@@ -202,12 +171,13 @@ async function buildAll() {
     console.log(talks)
 
     await ensureDirExists(distPath)
-    await Promise.all([
-        buildAllTalks(talks),
-        // NOTE: These are only needed when deploying separately
-        // buildIndexPage(talks),
-        // copyRedirectPage(talks),
-    ])
+
+    const buildTasks = [buildAllTalks(talks)]
+    if (includeHelperFiles) {
+        buildTasks.push(buildIndexPage(talks), copyRedirectPage(talks))
+    }
+
+    await Promise.all(buildTasks)
 }
 
 buildAll()

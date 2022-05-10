@@ -18,3 +18,13 @@ A collection of my talks and presentations.
 - `npm run build` - Build all talks and prepare a `dist` folder with all assets needed in the project root
 - `npm run serve` - Preview all talks. View `http://localhost:5000` and verify the build before publishing.
 - `npm run publish` - Build and publish the latest version to GitHub Pages.
+
+### Update talks on webpage
+
+1. Ensure both projects exist in the same parent directory, e.g. `projects/`
+
+2. Build talks `npm run build`
+
+3. Then run `cp -r dist/talks ../greenheart.github.io/static/`
+
+4. In the website repo, commit and publish the built talks

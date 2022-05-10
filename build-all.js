@@ -181,4 +181,4 @@ async function buildAll(includeHelperFiles = false) {
     await Promise.all(buildTasks)
 }
 
-buildAll(true)
+buildAll(false)

@@ -1,0 +1,24 @@
+{
+    "name": "vision-idg-tools",
+    "private": true,
+    "scripts": {
+        "build": "slidev build",
+        "dev": "slidev --port 3000",
+        "export": "slidev export",
+        "preview": "sirv dist --port 3000"
+    },
+    "dependencies": {
+        "@slidev/cli": "^0.32.1",
+        "@slidev/theme-default": "^0.21.2"
+    },
+    "devDependencies": {
+        "sirv-cli": "^2.0.2"
+    },
+    "type": "module",
+    "prettier": {
+        "singleQuote": true,
+        "trailingComma": "all",
+        "semi": false,
+        "tabWidth": 4
+    }
+}

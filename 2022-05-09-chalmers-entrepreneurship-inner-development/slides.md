@@ -39,7 +39,7 @@ My journey so far, and what I've learned.
 
 ## 2. Let's co-create a sustainable future!
 
-A workshop about exporing our visions for the future - and how we can create it together.
+A workshop about exploring our visions for the future - and how we can create it together.
 
 </v-click>
 

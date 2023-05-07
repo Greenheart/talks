@@ -6,22 +6,20 @@ layout: intro-image
 image: ./images/india-solar-woman.jpg
 routerMode: hash
 colorSchema: light
+css: unocss
 drawings:
     persist: false
 ---
 
-<div class="absolute top-10">
-  <span class="font-700">
-    Samuel Plumppu | 2023-05-08
-  </span>
-</div>
+<div class="grid grid-cols-2 content-between">
+  <div class="font-bold">Samuel Plumppu | 2023-05-08</div>
+  <div class="text-xs text-right">Photo by Abbie Trayler-Smith / Panos</div>
 
-<div class="absolute bottom-10">
-  <h1>Getting started as a social entrepreneur</h1>
-  <p>through exploration and co-creation</p>
+  <div class="col-span-2">
+    <h1>Getting started as a social entrepreneur</h1>
+    <p>through exploration and co-creation</p>
+  </div>
 </div>
-
-<p class="absolute top-10 right-10 text-[10px] !m-0">Photo by Abbie Trayler-Smith / Panos </p>
 
 ---
 
@@ -161,9 +159,11 @@ Build your community, share your progress and celebrate your victories together.
 </v-click>
 
 ---
-layout: 
+layout: intro-image
+image: ./images/pexels-frederico-erthal-3571576.jpg
 ---
 
+# Questions?
 
 ---
 layout: intro-image
@@ -184,8 +184,14 @@ image: ./images/pexels-fauxels-3183165.jpg
 </div>
 
 <div class="absolute bottom-10 filter drop-shadow-xl text-white bg-black bg-opacity-50 p-4">
-  <h1>Let's co-create a sustainable future!</h1>
-  <p>A workshop about exporing our visions for the future - and how we can create it together.</p>
+  <h1 class="">Let's co-create a sustainable future!</h1>
+  <p>A workshop about exploring our visions for the future - and how we can create it together.</p>
+</div>
+
+---
+
+<div class="grid place-items-center">
+  <Youtube id="B5Yro8J8r8Q" width="720" height="480" />
 </div>
 
 ---

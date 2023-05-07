@@ -1,0 +1,13 @@
+{
+  "name": "2023-05-08-chalmers-entrepreneurship",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.31.2",
+    "@slidev/theme-apple-basic": "^0.20.0"
+  }
+}

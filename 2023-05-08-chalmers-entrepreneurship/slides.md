@@ -177,15 +177,13 @@ layout: intro-image
 image: ./images/pexels-fauxels-3183165.jpg
 ---
 
-<div class="absolute top-10">
-  <span class="font-700">
-    Part 2
-  </span>
-</div>
-
-<div class="absolute bottom-10 filter drop-shadow-xl text-white bg-black bg-opacity-50 p-4">
-  <h1 class="">Let's co-create a sustainable future!</h1>
-  <p>A workshop about exploring our visions for the future - and how we can create it together.</p>
+<div class="grid content-between">
+  <div class="font-bold">Part 2</div>
+  
+  <div class="filter drop-shadow-xl text-white bg-black bg-opacity-50 p-4">
+    <h1 class="!text-5xl pb-4">Let's co-create a sustainable future!</h1>
+    <p>A workshop about exploring our visions for the future - and how we can create it together.</p>
+  </div>
 </div>
 
 ---
@@ -239,16 +237,14 @@ layout: intro-image
 image: ./images/pexels-fauxels-3183165.jpg
 ---
 
-<div class="absolute top-10">
-  <span class="font-700">
-    Part 3
-  </span>
-</div>
-
-<div class="absolute bottom-10 filter drop-shadow-xl text-white bg-black bg-opacity-50 p-4">
-  <p class="!mb-0">Case study:</p>
-  <h1>Greenheart Co-operative</h1>
-  <p>Creating a community of practice where we thrive in life while doing meaningful work.</p>
+<div class="grid content-between">
+  <div class="font-bold">Part 3</div>
+  
+  <div class="filter drop-shadow-xl text-white bg-black bg-opacity-50 p-4">
+    <p class="!mb-0">Case study:</p>
+    <h1 class="pb-4">Greenheart Co-operative</h1>
+    <p>Creating a community of practice where we thrive in life while doing meaningful work.</p>
+  </div>
 </div>
 
 ---

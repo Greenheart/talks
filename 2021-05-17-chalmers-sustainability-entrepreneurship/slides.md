@@ -159,7 +159,7 @@ image: ./images/pexels-fauxels-3183165.jpg
 
 <div class="absolute bottom-10 filter drop-shadow-xl text-white bg-black bg-opacity-50 p-4">
   <h1>Let's co-create a sustainable future!</h1>
-  <p>A workshop about exporing our visions for the future - and how we can create it together.</p>
+  <p>A workshop about exploring our visions for the future - and how we can create it together.</p>
 </div>
 
 ---

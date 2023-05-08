@@ -10,7 +10,16 @@ import {
 } from 'fs/promises'
 import { resolve } from 'path'
 
-const ignoredFolders = ['node_modules', 'dist', '.git', '.vscode']
+const ignoredFolders = [
+    'node_modules',
+    'dist',
+    '.git',
+    '.vscode',
+    // Ignore old talks since they have already been published
+    // This works around https://github.com/Greenheart/talks/issues/11
+    '2021-05-17-chalmers-sustainability-entrepreneurship',
+    '2021-09-11-hackforfuture-co-creation',
+]
 const cwd = process.cwd()
 const basePath = 'talks'
 const distPath = resolve(cwd, 'dist', basePath)

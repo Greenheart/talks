@@ -82,6 +82,12 @@ The same with entrepreneurship - explore opportunities that come up, but stay fo
 
 </v-click>
 
+<v-click>
+
+Vision principle - Focus on what you want to create.
+
+</v-click>
+
 ---
 layout: image-right
 image: ./images/pexels-michael-block-3225517.jpg

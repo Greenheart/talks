@@ -108,7 +108,7 @@ Choose a clear direction and finish projects before moving on. However, it's als
 </v-click>
 <v-click>
 
-Explore. Have a clear sense of your personal values, visions for the future, and what you need to thrive in life. We'll get back to this soon.
+Explore. Have a clear sense of your personal values, visions for the future, and what you need to thrive in life.
 
 </v-click>
 
@@ -121,7 +121,7 @@ Explore. Have a clear sense of your personal values, visions for the future, and
 ---
 
 <div class="h-[30rem] -mt-4 relative grid place-items-center">
-  <img src="/images/doughnut-economics.jpg" class="h-full" alt="Overview of the doughnut economics framework. Two circles, where the outer represents the ecological ceiling/planetary boundaries and the inner circle represents the social foundation" />
+  <img src="/images/doughnut-economics.jpg" class="h-full" alt="Overview of the Doughnut Economics framework. Two circles, where the outer represents the ecological ceiling/planetary boundaries and the inner circle represents the social foundation" />
 </div>
 
 ---
@@ -136,7 +136,15 @@ Explore. Have a clear sense of your personal values, visions for the future, and
 
 <v-click>
 
-<h2 class="pt-6">Start where you are</h2>
+<h2 class="pt-6">Sustainability needs to start with yourself</h2>
+
+Before you can widen your circles of compassion to other people or the world, you need to create a life where you can thrive.
+
+</v-click>
+
+<v-click>
+
+<h2>Start where you are</h2>
 
 Keep it simple, experiment, get feedback from people around you, iterate and improve as you learn more.
 
@@ -146,11 +154,6 @@ Keep it simple, experiment, get feedback from people around you, iterate and imp
 ## Work together with others!
 
 Build your community, share your progress and celebrate your victories together.
-
-</v-click>
-<v-click>
-
-## Sustainability needs to start with yourself
 
 </v-click>
 
@@ -171,6 +174,8 @@ image: ./images/pexels-frederico-erthal-3571576.jpg
 ---
 
 # Break
+
+Welcome back soon for part 2 and 3!
 
 ---
 layout: intro-image
@@ -233,6 +238,43 @@ Take turns and ask follow-up questions. 5 min each.
 </v-click>
 
 ---
+layout: image-right
+image: ./images/pexels-michael-block-3225517.jpg
+---
+
+# Group sharing
+
+Welcome back! What are your key insights?
+
+<h2 class="pt-8">1. What's your vision for a sustainable future?</h2>
+
+<h2 class="pt-8">2. What unique skills and perspectives do you want to use when co-creating a sustainable future?</h2>
+
+---
+layout: intro-image
+image: ./images/pexels-frederico-erthal-3571576.jpg
+---
+
+# Listening to pause
+
+
+<small>A short exercise with inspiration from  [IDG.tools](https://idg.tools/listening-to-pause-4w1249u)</small>
+
+<v-clicks>
+
+Look around you
+
+Recognise the potential in this room
+
+Think about how much we can create in the coming years
+
+Let's choose to tell new stories
+
+Let's create a wellbeing economy, in service of life
+
+</v-clicks>
+
+---
 layout: intro-image
 image: ./images/pexels-fauxels-3183165.jpg
 ---
@@ -252,81 +294,101 @@ layout: image-right
 image: ./images/pexels-michael-block-3225517.jpg
 ---
 
-# The need for inner development
+<h1 class="!text-3xl">Greenheart Co-operative</h1>
 
 <v-clicks>
 
--   How to deal with increasing complexity in the world?
+<p class="pt-6">A team of passionate designers and developers</p>
 
--   No time to find the root cause (whack-a-mole)
+[Humane tech](https://humanetech.com) for the [wellbeing economy](https://weall.org)
 
--   A lot of people are not in a position to think about sustainability.
+Inspired by Doughnut Economics
 
--   Accelerating the implementation of the Sustainable Development Goals.
+Reinvesting 100% of our surplus to increase our impact
+
+Growing demand among social enterprises and non-profits for our services
+
+[4 day working week](https://www.4dayweek.co.uk/)
+
+Coming soon: [https://greenheart.coop](https://greenheart.coop)
 
 </v-clicks>
-
----
-layout: bullets
----
-
-<div class="w-full grid grid-cols-2 -mt-[2.25rem] items-center gap-8 justify-items-center h-full">
-  <img src="/images/idg-logo.png" alt="Inner Development Goals logo" />
-  <img src="/images/sdg.png" class="h-56" alt="Sustainable Development Goals logo" />
-</div>
-
----
-layout: intro-image
-image: ./images/idg.png
----
-
----
-layout: intro-image
-image: ./images/29k.png
----
-
-# 29k
-
----
-layout: intro-image
-image: ./images/29k-idg.png
-class: 'bg-[#251e26]'
----
-
-<a class="absolute bottom-20 left-40" href="https://29k.org/inner-development">
-  https://29k.org/inner-development
-</a>
 
 ---
 layout: image-right
-image: ./images/reflections.jpg
+image: ./images/pexels-michael-block-3225517.jpg
 ---
 
-# Creating spaces for connection
+# Starting your co-op
 
 <v-clicks>
 
--   Reflections and sharings with friends
+<p class="pt-6"><a href="https://coompanion.se" target="_blank" rel="noopener">Coompanion</a> - free advisory</p>
 
--   Being present in nature
+[Ekobanken](https://ekobanken.se)
 
--   Deep, meaningful relationships
+[The deep design of business](https://doughnuteconomics.org/themes/2)
 
--   Increasing your impact as a sustainability entrepreneur
+Get help from other co-ops
+
+[Mastodon](https://joinmastodon.org/) social networking with other co-ops
+
+Apps are better as [platform co-operatives](https://platform.coop/)
+
+**"Good enough for now, safe enough to try"**
 
 </v-clicks>
+
+---
+layout: image-right
+image: ./images/pexels-michael-block-3225517.jpg
+---
+
+# For a thriving life
+
+<v-clicks>
+
+<p class="pt-6">Prioritise your wellbeing → Increase your impact</p>
+
+[Lifewheel - reflect on your life balance](https://reconnect.earth/lifewheel)
+
+[29k.org](https://29k.org)
+
+[IDG.tools](https://idg.tools)
+
+</v-clicks>
+
+<v-click>
+
+## Coming soon: [Reconnect.earth](https://reconnect.earth)
+
+Resource library, workshops and network for social entrepreneurs and change makers
+
+</v-click>
+
+<v-click>
+
+Welcome to get involved!
+
+</v-click>
 
 ---
 layout: intro-image
 image: ./images/pexels-frederico-erthal-3571576.jpg
 ---
 
-# Thank you!
+<div>
+  <h1>Thank you!</h1>
+  <p class="pt-6">Let's connect and co-create a sustainable future!</p>
 
-Let's connect and co-create a sustainable future!
+  <p class="pt-6"><a href="https://samuelplumppu.se" target="_blank" rel="noopener">https://samuelplumppu.se</a></p>
+  <p>Coming soon: <a href="https://greenheart.coop" target="_blank" rel="noopener" class="pt-4">https://greenheart.coop</a></p>
+</div>
 
--   https://samuelplumppu.se
--   https://29k.org
+<div class="text-center absolute right-14 bottom-14 w-64 h-72 space-y-2">
+  <a href="https://samuelplumppu.se" target="_blank" rel="noopener">https://samuelplumppu.se</a>
+  <img src="/images/qr-sp.svg" class="w-64 h-64" alt="QR code to samuelplumppu.se website" />
+</div>
 
 ---
 
@@ -339,5 +401,3 @@ Let's connect and co-create a sustainable future!
 [Aerial Photography of Road Near Mountains - Frederico Erthal (Pexels)](https://www.pexels.com/photo/aerial-photography-of-road-near-mountains-3571576/)
 
 [Photo Of Stream During Daytime - Michael Block (Pexels)](https://www.pexels.com/photo/photo-of-stream-during-daytime-3225517/)
-
-[Green Leaf Trees on Forest - Lum3n (Pexels)](https://www.pexels.com/photo/green-leaf-trees-on-forest-167698/)

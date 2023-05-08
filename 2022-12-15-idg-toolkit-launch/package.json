@@ -8,8 +8,8 @@
         "preview": "sirv dist --port 3000"
     },
     "dependencies": {
-        "@slidev/cli": "^0.32.1",
-        "@slidev/theme-default": "^0.21.2"
+        "@slidev/cli": "0.32.1",
+        "@slidev/theme-default": "0.21.2"
     },
     "devDependencies": {
         "sirv-cli": "^2.0.2"

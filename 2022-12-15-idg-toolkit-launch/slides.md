@@ -1,8 +1,12 @@
 ---
+title: 'IDG Toolkit Launch'
+titleTemplate: '%s'
 theme: default
 background: ./images/pexels-mali-maeder-142497.jpg
 highlighter: shiki
 lineNumbers: false
+routerMode: hash
+colorSchema: dark
 drawings:
   persist: false
 ---

@@ -58,13 +58,13 @@ image: ./images/pexels-michael-block-3225517.jpg
 
 <v-clicks>
 
--   freeCodeCamp.org - learn programming for free
+-   [freeCodeCamp.org](https://freecodecamp.org) - learn programming for free
 -   Swedish climate movement
--   WeDontHaveTime.org - social network for climate action
--   hackforfuture.org - creating open source solutions for a sustainable future
--   29k and Inner Development Goals
--   Klimatkollen.se - open source climate data visualizations for citizens
--   Greenheart Co-operative - humane tech for the emerging wellbeing economy
+-   [WeDontHaveTime.org](https://wedonthavetime.org) - social network for climate action
+-   [hackforfuture.org](https://hackforfuture.org) - creating open source solutions for a sustainable future
+-   [29k](https://29k.org) and [Inner Development Goals](https://innerdevelopmentgoals.org)
+-   [Klimatkollen.se](https://klimatkollen.se) - open source climate data visualizations for citizens
+-   [Greenheart Co-operative](https://greenheart.coop) - humane tech for the emerging wellbeing economy
 
 </v-clicks>
 

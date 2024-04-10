@@ -12,8 +12,8 @@ drawings:
 ---
 
 <div class="grid grid-cols-2 content-between">
-  <div class="font-bold">Samuel Plumppu | 2023-05-08</div>
-  <div class="text-xs text-right">Photo by Abbie Trayler-Smith / Panos</div>
+  <div class="font-bold">Samuel Plumppu | 2024-04-11</div>
+  <div class="text-xs text-right"><a href="https://climatevisuals.org/asset/?st=b36a1d749a92addde7f23e0574558b64c023f677" rel="noopener noreferrer">Photo by Abbie Trayler-Smith / Panos</a></div>
 
   <div class="col-span-2">
     <h1>Getting started as a social entrepreneur</h1>
@@ -35,17 +35,17 @@ My journey so far, and what I've learned.
 
 <v-click>
 
-## 2. Let's co-create a sustainable future!
+## 2. Case study: Greenheart Co-operative
 
-A workshop about exploring our visions for the future - and how we can create it together.
+Thrive in life while doing good in the world.
 
 </v-click>
 
 <v-click>
 
-## 3. Case study: Greenheart Co-operative
+## 3. Let's co-create a sustainable future!
 
-Creating a community of practice where we thrive in life while doing meaningful work.
+Let's explore our visions for the future - and how we can realize them.
 
 </v-click>
 
@@ -54,7 +54,7 @@ layout: image-right
 image: ./images/pexels-michael-block-3225517.jpg
 ---
 
-# My journey so far
+# My journey since 2015
 
 <v-clicks>
 
@@ -63,6 +63,7 @@ image: ./images/pexels-michael-block-3225517.jpg
 -   WeDontHaveTime.org - social network for climate action
 -   hackforfuture.org - creating open source solutions for a sustainable future
 -   29k and Inner Development Goals
+-   Klimatkollen.se - open source climate data visualizations for citizens
 -   Greenheart Co-operative - humane tech for the emerging wellbeing economy
 
 </v-clicks>
@@ -84,7 +85,7 @@ The same with entrepreneurship - explore opportunities that come up, but stay fo
 
 <v-click>
 
-Vision principle - Focus on what you want to create.
+**Vision principle - Focus on what you want to create.**
 
 </v-click>
 
@@ -172,30 +173,7 @@ layout: intro-image
 image: ./images/pexels-frederico-erthal-3571576.jpg
 ---
 
-# Questions?
-
----
-layout: intro-image
-image: ./images/pexels-frederico-erthal-3571576.jpg
----
-
-# Break
-
-Welcome back soon for part 2 and 3!
-
----
-layout: intro-image
-image: ./images/pexels-fauxels-3183165.jpg
----
-
-<div class="grid content-between">
-  <div class="font-bold">Part 2</div>
-  
-  <div class="filter drop-shadow-xl text-white bg-black bg-opacity-50 p-4">
-    <h1 class="!text-5xl pb-4">Let's co-create a sustainable future!</h1>
-    <p>A workshop about exploring our visions for the future - and how we can create it together.</p>
-  </div>
-</div>
+# Any questions so far?
 
 ---
 
@@ -210,17 +188,218 @@ image: ./images/pexels-michael-block-3225517.jpg
 
 # Explore your vision for the future
 
-Take 5 minutes to reflect:
+Take 5 minutes and reflect on your own:
 
 <v-click>
 
 -   What does a sustainable future mean to me?
 
--   What do I value in life?
+-   What do I need to thrive in life while doing good in the world?
 
--   How can I live a good life while contributing to a sustainable future?
+<br>
+
+**We will discuss in pairs later.**
 
 </v-click>
+
+---
+layout: intro-image
+image: ./images/pexels-fauxels-3183165.jpg
+---
+
+<div class="grid content-between">
+  <div class="font-bold">Part 2</div>
+  
+  <div class="filter drop-shadow-xl text-white bg-black bg-opacity-50 p-4">
+    <p class="!mb-0">Case study:</p>
+    <h1 class="pb-4">Greenheart Co-operative</h1>
+    <p>Thrive in life while doing good in the world.</p>
+  </div>
+</div>
+
+---
+layout: default
+---
+
+<div class="grid grid-cols-2 h-full">
+
+<div>
+
+<h1 class="!text-3xl">Greenheart Co-operative</h1>
+
+<p class="pt-6">A team of passionate designers and developers</p>
+
+<v-clicks>
+
+[Humane tech](https://humanetech.com) for the [wellbeing economy](https://weall.org)
+
+Enterprise design inspired by Doughnut Economics
+
+Reinvesting 100% of our surplus to increase our impact
+
+Growing demand among social enterprises and non-profits for our services
+
+[4 day working week](https://www.4dayweek.co.uk/)
+
+[https://greenheart.coop](https://greenheart.coop)
+
+</v-clicks>
+
+</div>
+
+<div class="grid place-items-center">
+  <img src="/images/greenheart-logo-light.svg" alt="Greenheart Co-operative logo" class="p-4" />
+</div>
+
+</div>
+
+---
+layout: default
+---
+
+<div class="grid grid-cols-2 h-full">
+
+<div>
+
+# Why a co-operative?
+
+<p class="pt-6">Mobilizing as much resources as possible for creating the wellbeing economy</p>
+
+<v-clicks>
+
+A democratic economy, closer to everyday life
+
+[Community wealth building](https://democracycollaborative.org/programs/cwb)
+
+Incentives for good work: [automony, mastery, purpose](https://www.youtube.com/watch?v=u6XAPnuFjJc)
+
+[Increasing resilience](https://education.resilience.org/) for people and communities
+
+A systematic response to the challenges of the our time
+
+</v-clicks>
+
+</div>
+
+<div class="grid place-items-center">
+  <img src="/images/greenheart-logo-light.svg" alt="Greenheart Co-operative logo" class="p-4" />
+</div>
+
+</div>
+
+---
+layout: intro-image
+image: ./images/systems-awareness-iceberg.jpg
+---
+
+<h2 class="text-black font-bold">System awareness iceberg</h2>
+
+<!-- Let's take a step back and explore what I mean by a systematic response -->
+<!-- How many here are familiar with systems thinking? -->
+<!-- Explain the systems awareness iceberg and how systems thinking is related to social entrepreneurship -->
+<!-- Explore the co-operative model through the systems awareness lens -->
+
+---
+
+<!-- Let's explore how Greenheart Co-op through appplied the design of business in practice -->
+
+<div class="h-[30rem] -mt-4 relative grid place-items-center">
+  <img src="/images/deep-design-of-business.jpg" class="h-full" alt="The deep design of business, shifting from 'How much value can we extract from this organisation?' to 'How many benefits can we generate through this organisation?'. This happens by re-designing how the organisation interacts with its purpose, networks, governance, ownership and finance" />
+</div>
+
+---
+layout: image-right
+image: ./images/pexels-michael-block-3225517.jpg
+---
+
+# Starting your co-op
+
+<v-clicks>
+
+<p class="pt-6"><a href="https://coompanion.se" target="_blank" rel="noopener">Coompanion</a> - excellent, free advisory</p>
+
+[Ekobanken](https://ekobanken.se) - top-rated by [fairfinanceguide.se](https://fairfinanceguide.se/)
+
+[The deep design of business](https://doughnuteconomics.org/themes/business-enterprise)
+
+Collaborate with other co-ops
+
+[Mastodon](https://joinmastodon.org/) - networking with other social entrepreneurs
+
+Apps are better as [platform co-operatives](https://platform.coop/)
+
+**"Good enough for now, safe enough to try"**
+
+</v-clicks>
+
+---
+layout: image-right
+image: ./images/pexels-michael-block-3225517.jpg
+---
+
+# For a thriving life
+
+<v-clicks>
+
+<p class="pt-6">Prioritize your wellbeing → Increase your impact</p>
+
+[Lifewheel - reflect on your life balance](https://reconnect.earth/lifewheel)
+
+[29k.org](https://29k.org)
+
+[The Daybreak boardgame](https://daybreakgame.org/)
+
+</v-clicks>
+
+<v-click>
+
+## [Reconnect.earth](https://reconnect.earth)
+
+Resource library, workshops and network for social entrepreneurs and change makers
+
+</v-click>
+
+<v-click>
+
+Welcome to get involved!
+
+</v-click>
+
+---
+layout: default
+---
+
+<div class="grid grid-cols-2 h-full">
+
+<div>
+
+<h1 class="!text-6xl">Questions?</h1>
+
+<p class="pt-6">Before we move on to the final part... :)</p>
+
+</div>
+
+<div class="grid place-items-center">
+  <img src="/images/greenheart-logo-light.svg" alt="Greenheart Co-operative logo" class="p-4" />
+</div>
+
+</div>
+
+---
+layout: intro-image
+image: ./images/the-fifth-sacred-thing.jpg
+---
+
+<div class="grid grid-cols-2 content-between">
+  <div class="font-bold"><span class="p-2 bg-black bg-opacity-70">Part 3</span></div>
+  <div class="text-xs text-right"><span class="p-2 bg-black bg-opacity-50">
+  <a href="https://www.jessicaperlsteinart.com/workszoom/3667292/the-fifth-sacred-thing#/" rel="noopener noreferrer">The Fifth Sacred Thing by Jessica Perlstein</a></span></div>
+  
+  <div class="filter drop-shadow-xl text-white bg-black bg-opacity-50 p-4 col-span-2">
+    <h1 class="!text-5xl pb-4">Let's co-create a sustainable future!</h1>
+    <p>Let's explore our visions for the future - and how we can realize them.</p>
+  </div>
+</div>
 
 ---
 layout: image-right
@@ -250,7 +429,7 @@ image: ./images/pexels-michael-block-3225517.jpg
 
 # Group sharing
 
-Welcome back! What are your key insights?
+What are your key insights?
 
 <h2 class="pt-8">1. What's your vision for a sustainable future?</h2>
 
@@ -258,125 +437,36 @@ Welcome back! What are your key insights?
 
 ---
 layout: intro-image
-image: ./images/pexels-frederico-erthal-3571576.jpg
+image: ./images/koen-emmers-Da1Wv-XC43k-unsplash.jpg
 ---
 
-# Listening to pause
+<h2 class="!text-3xl text-black"><span class="p-2 bg-white bg-opacity-50">Like ripples on water</span></h2>
 
+<!-- Thanks for sharing!
 
-<small>A short exercise with inspiration from  [IDG.tools](https://idg.tools/listening-to-pause-4w1249u)</small>
+If we come full circle and think about Ikigai and working with something both meaningful and impactful.
 
-<v-clicks>
+Let's zoom out a bit, we're all like ripples on the water.
 
-Look around you
+We are like ripples on the water.
 
-Recognise the potential in this room
+How we show up in the world and how we act influences the world around us, both in positive and negative ways.
+
+TODO: finalize phrasing
+
+I'm convinced that if we create conditions so more people can thrive in life,  and make positive ripples around them in the world, then we make better progress towards a wellbeing economy.
+
+Now, take a look around you
+
+Recognize the potential in this room.
 
 Think about how much we can create in the coming years
 
 Let's choose to tell new stories
 
-Let's create a wellbeing economy, in service of life
+Let's create a wellbeing economy, for people and planet
 
-</v-clicks>
-
----
-layout: intro-image
-image: ./images/pexels-fauxels-3183165.jpg
----
-
-<div class="grid content-between">
-  <div class="font-bold">Part 3</div>
-  
-  <div class="filter drop-shadow-xl text-white bg-black bg-opacity-50 p-4">
-    <p class="!mb-0">Case study:</p>
-    <h1 class="pb-4">Greenheart Co-operative</h1>
-    <p>Creating a community of practice where we thrive in life while doing meaningful work.</p>
-  </div>
-</div>
-
----
-layout: image-right
-image: ./images/pexels-michael-block-3225517.jpg
----
-
-<h1 class="!text-3xl">Greenheart Co-operative</h1>
-
-<v-clicks>
-
-<p class="pt-6">A team of passionate designers and developers</p>
-
-[Humane tech](https://humanetech.com) for the [wellbeing economy](https://weall.org)
-
-Inspired by Doughnut Economics
-
-Reinvesting 100% of our surplus to increase our impact
-
-Growing demand among social enterprises and non-profits for our services
-
-[4 day working week](https://www.4dayweek.co.uk/)
-
-Coming soon: [https://greenheart.coop](https://greenheart.coop)
-
-</v-clicks>
-
----
-layout: image-right
-image: ./images/pexels-michael-block-3225517.jpg
----
-
-# Starting your co-op
-
-<v-clicks>
-
-<p class="pt-6"><a href="https://coompanion.se" target="_blank" rel="noopener">Coompanion</a> - free advisory</p>
-
-[Ekobanken](https://ekobanken.se)
-
-[The deep design of business](https://doughnuteconomics.org/themes/2)
-
-Get help from other co-ops
-
-[Mastodon](https://joinmastodon.org/) social networking with other co-ops
-
-Apps are better as [platform co-operatives](https://platform.coop/)
-
-**"Good enough for now, safe enough to try"**
-
-</v-clicks>
-
----
-layout: image-right
-image: ./images/pexels-michael-block-3225517.jpg
----
-
-# For a thriving life
-
-<v-clicks>
-
-<p class="pt-6">Prioritise your wellbeing → Increase your impact</p>
-
-[Lifewheel - reflect on your life balance](https://reconnect.earth/lifewheel)
-
-[29k.org](https://29k.org)
-
-[IDG.tools](https://idg.tools)
-
-</v-clicks>
-
-<v-click>
-
-## Coming soon: [Reconnect.earth](https://reconnect.earth)
-
-Resource library, workshops and network for social entrepreneurs and change makers
-
-</v-click>
-
-<v-click>
-
-Welcome to get involved!
-
-</v-click>
+-->
 
 ---
 layout: intro-image
@@ -388,7 +478,7 @@ image: ./images/pexels-frederico-erthal-3571576.jpg
   <p class="pt-6">Let's connect and co-create a sustainable future!</p>
 
   <p class="pt-6"><a href="https://samuelplumppu.se" target="_blank" rel="noopener">https://samuelplumppu.se</a></p>
-  <p>Coming soon: <a href="https://greenheart.coop" target="_blank" rel="noopener" class="pt-4">https://greenheart.coop</a></p>
+  <p><a href="https://greenheart.coop" target="_blank" rel="noopener" class="pt-4">https://greenheart.coop</a></p>
 </div>
 
 <div class="text-center absolute right-14 bottom-14 w-64 h-72 space-y-2">
@@ -407,3 +497,9 @@ image: ./images/pexels-frederico-erthal-3571576.jpg
 [Aerial Photography of Road Near Mountains - Frederico Erthal (Pexels)](https://www.pexels.com/photo/aerial-photography-of-road-near-mountains-3571576/)
 
 [Photo Of Stream During Daytime - Michael Block (Pexels)](https://www.pexels.com/photo/photo-of-stream-during-daytime-3225517/)
+
+[System Awareness Iceberg Infographic (CC)](https://lab.howie.tw/2018/02/the-art-of-system-thinking-how-to-change-system.html)
+
+[Water drop on body of water - Koen Emmers (Unsplash)](https://unsplash.com/photos/water-drop-on-body-of-water-Da1Wv-XC43k)
+
+[The Fifth Sacred Thing - © Jessica Perlstein](https://www.jessicaperlsteinart.com/workszoom/3667292/the-fifth-sacred-thing#/)

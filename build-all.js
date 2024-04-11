@@ -19,6 +19,10 @@ const ignoredFolders = [
     // This works around https://github.com/Greenheart/talks/issues/11
     '2021-05-17-chalmers-sustainability-entrepreneurship',
     '2021-09-11-hackforfuture-co-creation',
+    '2022-05-09-chalmers-entrepreneurship-inner-development',
+    '2022-12-15-idg-toolkit-launch',
+    '2023-05-08-chalmers-entrepreneurship',
+    '2024-04-11-chalmers-entrepreneurship',
 ]
 const cwd = process.cwd()
 const basePath = 'talks'

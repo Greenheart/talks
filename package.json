@@ -10,7 +10,7 @@
         "serve": "sirv dist"
     },
     "devDependencies": {
-        "promisify-child-process": "^4.1.1",
+        "promisify-child-process": "^4.1.2",
         "sirv-cli": "^2.0.2"
     },
     "prettier": {

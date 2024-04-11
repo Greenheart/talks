@@ -444,23 +444,25 @@ image: ./images/koen-emmers-Da1Wv-XC43k-unsplash.jpg
 
 <!-- Thanks for sharing!
 
-If we come full circle and think about Ikigai and working with something both meaningful and impactful.
+I want to end with this picture.
 
-Let's zoom out a bit, we're all like ripples on the water.
+If there's just one thing you take away from today, let it be that we all are like ripples on water.
 
-We are like ripples on the water.
+Like ripples on water, how we show up in the world and how we act influences the world around us, both in positive and negative ways. However, we are not separate from the world, but interconnected through all our relationships, and with the web of life that makes our lives possible in the first place. We thus also get influenced by the world around us.
 
-How we show up in the world and how we act influences the world around us, both in positive and negative ways.
+With this said, imagine how the world would look like if more people had the conditions to thrive in life while doing good in the world.
 
-TODO: finalize phrasing
+Imagine if we could create an economy where organizations were designed to empower and support people so their ripples out into the world could have a positive impact?
 
-I'm convinced that if we create conditions so more people can thrive in life,  and make positive ripples around them in the world, then we make better progress towards a wellbeing economy.
+Based on what I've learned so far, I'm convinced this is possible. Especially if we co-operate.
 
-Now, take a look around you
+So, take a look around you
 
-Recognize the potential in this room.
+Think about all our visions for the future
 
-Think about how much we can create in the coming years
+Recognize the potential in this room
+
+Think about all the good things we can make happen in the coming years
 
 Let's choose to tell new stories
 

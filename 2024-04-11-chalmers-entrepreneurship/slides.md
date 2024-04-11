@@ -227,7 +227,7 @@ layout: default
 
 <h1 class="!text-3xl">Greenheart Co-operative</h1>
 
-<p class="pt-6">A team of passionate designers and developers</p>
+<p class="pt-6">A team of passionate developers and designers</p>
 
 <v-clicks>
 

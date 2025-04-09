@@ -121,15 +121,27 @@ Explore. Have a clear sense of your personal values, visions for the future, and
 
 ---
 
-<div class="h-[30rem] -mt-4 relative grid place-items-center">
+<!-- <div class="h-[30rem] -mt-4 relative grid place-items-center">
   <img src="/images/ikigai.jpg" class="h-full" alt="Ikigai graphic - overlapping colored circles representing your life's purpose" />
-</div>
+</div> -->
+
+<!-- <div class="h-full grid place-items-center max-h-120">
+  <img src="/images/ikigai.jpg" class="h-full" style="object-fit: contain" alt="Ikigai graphic - overlapping colored circles representing your life's purpose" />
+</div> -->
+
+<img src="/images/ikigai.jpg" class="max-h-fit mx-auto" alt="Ikigai graphic - overlapping colored circles representing your life's purpose" />
 
 ---
 
-<div class="h-[30rem] -mt-4 relative grid place-items-center">
+<img src="/images/doughnut-economics.jpg" class="max-h-fit mx-auto" alt="Overview of the Doughnut Economics framework. Two circles, where the outer represents the ecological ceiling/planetary boundaries and the inner circle represents the social foundation" />
+
+<!-- <div class="h-full grid place-items-center max-h-120">
   <img src="/images/doughnut-economics.jpg" class="h-full" alt="Overview of the Doughnut Economics framework. Two circles, where the outer represents the ecological ceiling/planetary boundaries and the inner circle represents the social foundation" />
-</div>
+</div> -->
+
+<!-- <div class="h-[30rem] -mt-4 relative grid place-items-center">
+  <img src="/images/doughnut-economics.jpg" class="h-full" alt="Overview of the Doughnut Economics framework. Two circles, where the outer represents the ecological ceiling/planetary boundaries and the inner circle represents the social foundation" />
+</div> -->
 
 ---
 

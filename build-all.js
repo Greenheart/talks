@@ -1,4 +1,3 @@
-import { exec } from 'promisify-child-process'
 import {
     readdir,
     rm,
@@ -9,6 +8,10 @@ import {
     stat,
 } from 'fs/promises'
 import { resolve } from 'path'
+import { promisify } from 'util'
+import { exec } from 'child_process'
+
+const execAsync = promisify(exec)
 
 const ignoredFolders = [
     'node_modules',
@@ -22,7 +25,7 @@ const ignoredFolders = [
     '2022-05-09-chalmers-entrepreneurship-inner-development',
     '2022-12-15-idg-toolkit-launch',
     '2023-05-08-chalmers-entrepreneurship',
-    '2024-04-11-chalmers-entrepreneurship',
+    // '2024-04-11-chalmers-entrepreneurship',
 ]
 const cwd = process.cwd()
 const basePath = 'talks'
@@ -141,7 +144,7 @@ async function buildAllTalks(talks) {
         talks.map(async (talk) => {
             const base = `/talks/${talk}/`
             const out = resolve(distPath, talk)
-            const { stderr, stdout } = await exec(
+            const { stderr, stdout } = await execAsync(
                 `cd ${talk} && npm run build -- --base ${base} --out ${out}`,
             )
 

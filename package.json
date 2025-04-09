@@ -6,12 +6,7 @@
     "type": "module",
     "author": "Samuel Plumppu",
     "scripts": {
-        "build": "node build-all.js",
-        "serve": "sirv dist"
-    },
-    "devDependencies": {
-        "promisify-child-process": "^4.1.2",
-        "sirv-cli": "^2.0.2"
+        "build": "node build-all.js"
     },
     "prettier": {
         "tabWidth": 4,

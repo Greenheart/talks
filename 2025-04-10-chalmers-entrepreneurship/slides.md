@@ -97,7 +97,7 @@ image: ./images/pexels-michael-block-3225517.jpg
 
 # Discuss in pairs:
 
-Take turns and ask follow-up questions. 2 min per person.
+Take turns and ask follow-up questions. 5 min per person.
 
 <v-click>
 
@@ -278,13 +278,13 @@ layout: default
 
 <v-clicks>
 
-[Humane tech](https://humanetech.com) for the [wellbeing economy](https://weall.org)
+Tech for a thriving future - system development & design
 
 Enterprise design inspired by Doughnut Economics
 
 Reinvesting 100% of our surplus to increase our impact
 
-Growing demand among social enterprises and non-profits for our services
+Growing demand among social enterprises and non-profits
 
 [4 day working week](https://www.4dayweek.co.uk/)
 
@@ -404,6 +404,64 @@ layout: default
 <!-- TODO: Show examples from other companies -->
 
 <!-- TODO: clear instructions for how to participate -->
+
+<!-- IDEA: Maybe explore your ideas for social innovations, or think of a social enterprise where we could increase the positive impact by changing the business design.  -->
+
+
+---
+layout: intro-image
+image: ./images/pexels-fauxels-3183165.jpg
+---
+
+<div class="grid content-between">
+  <div class="font-bold">Part 3</div>
+  
+  <div class="filter drop-shadow-xl text-white bg-black bg-opacity-50 p-4">
+    <p class="!mb-0">Workshop:</p>
+    <h1 class="pb-4">Doughnut Design for Business</h1>
+    <p>Enabling transformative change</p>
+  </div>
+</div>
+
+
+
+---
+
+<div class="h-[30rem] -mt-4 relative grid place-items-center">
+  <img src="/images/de-ws-1.png" class="h-full" alt="" />
+</div>
+
+---
+
+<div class="h-[30rem] -mt-4 relative grid place-items-center">
+  <img src="/images/de-ws-2.png" class="h-full" alt="" />
+</div>
+
+---
+
+<div class="h-[30rem] -mt-4 relative grid place-items-center">
+  <img src="/images/de-ws-3.png" class="h-full" alt="" />
+</div>
+
+---
+
+<div class="h-[30rem] -mt-4 relative grid place-items-center">
+  <img src="/images/de-ws-4.png" class="h-full" alt="" />
+</div>
+
+---
+
+<div class="h-[30rem] -mt-4 relative grid place-items-center">
+  <img src="/images/de-ws-2.png" class="h-full" alt="" />
+</div>
+
+---
+
+<div class="h-[30rem] -mt-4 relative grid place-items-center">
+  <img src="/images/de-ws-5.png" class="h-full" alt="" />
+</div>
+
+
 
 ---
 layout: intro-image

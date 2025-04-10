@@ -49,13 +49,17 @@ How can enterprise design enable social innovations?
 
 </v-click>
 
----
+
+<!--
 
 # Notes
 
 - Questions welcome!
 
 - Slides will be shared afterwards
+
+
+-->
 
 ---
 

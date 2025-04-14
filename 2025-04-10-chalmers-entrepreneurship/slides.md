@@ -390,15 +390,6 @@ layout: default
 
 </div>
 
-
-<!-- TODO: Add a few workshop slides here -->
-<!-- TODO: Show examples from other companies -->
-
-<!-- TODO: clear instructions for how to participate -->
-
-<!-- IDEA: Maybe explore your ideas for social innovations, or think of a social enterprise where we could increase the positive impact by changing the business design.  -->
-
-
 ---
 layout: intro-image
 image: ./images/pexels-fauxels-3183165.jpg
@@ -414,7 +405,7 @@ image: ./images/pexels-fauxels-3183165.jpg
   </div>
 </div>
 
-
+<!-- For the workshop, either explore your own ideas for social innovations, or think of a social enterprise (based on the examples) where we could increase the positive impact by changing the business design.  -->
 
 ---
 

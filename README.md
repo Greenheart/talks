@@ -14,14 +14,13 @@ A collection of some of my public talks and presentations.
 
 ## Scripts
 
--   `npm run build` - Build all talks and prepare a `dist` folder with all assets needed in the project root
--   `npm run serve` - Preview all talks. View `http://localhost:5000` and verify the build before publishing.
+-   `pnpm run build` - Build all talks and prepare a `dist` folder with all assets needed in the project root
 
 ### Update talks on webpage
 
 1. Ensure both projects exist in the same parent directory, e.g. `projects/`
 
-2. Build talks `npm run build`
+2. Build talks `pnpm run build`
 
 3. Then run `cp -r dist/talks ../greenheart.github.io/static/`
 

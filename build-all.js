@@ -145,7 +145,7 @@ async function buildAllTalks(talks) {
             const base = `/talks/${talk}/`
             const out = resolve(distPath, talk)
             const { stderr, stdout } = await execAsync(
-                `cd ${talk} && npm run build -- --base ${base} --out ${out}`,
+                `cd ${talk} && pnpm run build -- --base ${base} --out ${out}`,
             )
 
             if (stderr) {

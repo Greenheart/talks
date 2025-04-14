@@ -60,7 +60,7 @@ image: ./images/the-fifth-sacred-thing.jpg
   <a href="https://www.jessicaperlsteinart.com/workszoom/3667292/the-fifth-sacred-thing#/" rel="noopener noreferrer">The Fifth Sacred Thing by Jessica Perlstein</a></span></div>
   
   <div class="filter drop-shadow-xl text-white bg-black/50 p-4 col-span-2">
-    <h1 class="!text-5xl pb-4">Doughnut Economics</h1>
+    <h1 class="pb-4">Doughnut Economics</h1>
     <p>Wellbeing for all within the means of the planet.</p>
   </div>
 </div>

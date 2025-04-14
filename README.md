@@ -25,3 +25,18 @@ A collection of some of my public talks and presentations.
 3. Then run `cp -r dist/talks ../greenheart.github.io/static/`
 
 4. In the website repo, commit and publish the built talks
+
+### Export talk as PDF
+
+Install `playwright-chromium` for the specific talk.
+
+
+### Compress PDF to reduce file size
+
+One way is to use `ghostscript` to make the PDF smaller:
+
+```sh
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile=compressed-talk.pdf talk.pdf
+```
+
+If needed, the quality can be reduced by replacing `/prepress` (default, 300 dpi) in the command above to `/ebook` (150 dpi) or `screen` (70 dpi).

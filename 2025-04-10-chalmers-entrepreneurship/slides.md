@@ -11,7 +11,7 @@ drawings:
     persist: false
 ---
 
-<div class="grid grid-cols-2 content-between">
+<div class="grid grid-cols-2 content-between h-full">
   <div class="font-bold">Samuel Plumppu | 2025-04-10</div>
   <div class="text-xs text-right"><a href="https://climatevisuals.org/asset/?st=b36a1d749a92addde7f23e0574558b64c023f677" rel="noopener noreferrer">Photo by Abbie Trayler-Smith / Panos</a></div>
 
@@ -77,7 +77,7 @@ layout: intro-image
 image: ./images/the-fifth-sacred-thing.jpg
 ---
 
-<div class="grid grid-cols-2 content-between">
+<div class="grid grid-cols-2 content-between h-full">
   <div class="font-bold"><span class="p-2 bg-black/70">Part 1</span></div>
   <div class="text-xs text-right"><span class="p-2 bg-black/50">
   <a href="https://www.jessicaperlsteinart.com/workszoom/3667292/the-fifth-sacred-thing#/" rel="noopener noreferrer">The Fifth Sacred Thing by Jessica Perlstein</a></span></div>
@@ -258,7 +258,7 @@ layout: intro-image
 image: ./images/pexels-fauxels-3183165.jpg
 ---
 
-<div class="grid content-between">
+<div class="grid content-between h-full">
   <div class="font-bold">Part 2</div>
   
   <div class="filter drop-shadow-xl text-white bg-black/50 p-4">
@@ -417,7 +417,7 @@ layout: intro-image
 image: ./images/pexels-fauxels-3183165.jpg
 ---
 
-<div class="grid content-between">
+<div class="grid content-between h-full">
   <div class="font-bold">Part 3</div>
   
   <div class="filter drop-shadow-xl text-white bg-black/50 p-4">

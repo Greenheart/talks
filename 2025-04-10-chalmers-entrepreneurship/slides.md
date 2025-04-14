@@ -78,11 +78,11 @@ image: ./images/the-fifth-sacred-thing.jpg
 ---
 
 <div class="grid grid-cols-2 content-between">
-  <div class="font-bold"><span class="p-2 bg-black bg-opacity-70">Part 1</span></div>
-  <div class="text-xs text-right"><span class="p-2 bg-black bg-opacity-50">
+  <div class="font-bold"><span class="p-2 bg-black/70">Part 1</span></div>
+  <div class="text-xs text-right"><span class="p-2 bg-black/50">
   <a href="https://www.jessicaperlsteinart.com/workszoom/3667292/the-fifth-sacred-thing#/" rel="noopener noreferrer">The Fifth Sacred Thing by Jessica Perlstein</a></span></div>
   
-  <div class="filter drop-shadow-xl text-white bg-black bg-opacity-50 p-4 col-span-2">
+  <div class="filter drop-shadow-xl text-white bg-black/50 p-4 col-span-2">
     <h1 class="!text-5xl pb-4">Wellbeing Economics</h1>
     <p>Meeting everyone's needs within the means of the planet.</p>
   </div>
@@ -261,7 +261,7 @@ image: ./images/pexels-fauxels-3183165.jpg
 <div class="grid content-between">
   <div class="font-bold">Part 2</div>
   
-  <div class="filter drop-shadow-xl text-white bg-black bg-opacity-50 p-4">
+  <div class="filter drop-shadow-xl text-white bg-black/50 p-4">
     <p class="!mb-0">Case study:</p>
     <h1 class="pb-4">Greenheart Co-operative</h1>
     <p>Tech for a thriving future</p>
@@ -420,7 +420,7 @@ image: ./images/pexels-fauxels-3183165.jpg
 <div class="grid content-between">
   <div class="font-bold">Part 3</div>
   
-  <div class="filter drop-shadow-xl text-white bg-black bg-opacity-50 p-4">
+  <div class="filter drop-shadow-xl text-white bg-black/50 p-4">
     <p class="!mb-0">Workshop:</p>
     <h1 class="pb-4">Doughnut Design for Business</h1>
     <p>Enabling transformative change</p>
@@ -472,7 +472,7 @@ layout: intro-image
 image: ./images/koen-emmers-Da1Wv-XC43k-unsplash.jpg
 ---
 
-<h2 class="!text-3xl text-black"><span class="p-2 bg-white bg-opacity-50">Like ripples on water</span></h2>
+<h2 class="!text-3xl text-black"><span class="p-2 bg-white/50">Like ripples on water</span></h2>
 
 <!-- Thanks for sharing!
 

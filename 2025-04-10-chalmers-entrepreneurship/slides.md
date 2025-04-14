@@ -49,29 +49,6 @@ How can enterprise design enable social innovations?
 
 </v-click>
 
-
-<!--
-
-# Notes
-
-- Questions welcome!
-
-- Slides will be shared afterwards
-
-
--->
-
----
-
-<div class="h-[30rem] -mt-4 relative grid place-items-center">
-  <img src="/images/doughnut-economics-overview.png" class="h-full" alt="The Doughnut consists of a social foundation, to ensure that no one is left falling short on life’s essentials, and an ecological ceiling, to ensure that humanity does not collectively overshoot the planetary boundaries that protect Earth's life-supporting systems. The doughnut-shaped space between these boundaries is where humanity can thrive." />
-</div>
----
-
-<div class="h-[30rem] -mt-4 relative grid place-items-center">
-  <img src="/images/doughnut-economics-out-of-balance.png" class="h-full" alt="A global Doughnut portrait of today's world, showing overshoot in several planetary boundaries, and shortfall for most social dimensions as well." />
-</div>
-
 ---
 layout: intro-image
 image: ./images/the-fifth-sacred-thing.jpg
@@ -83,9 +60,21 @@ image: ./images/the-fifth-sacred-thing.jpg
   <a href="https://www.jessicaperlsteinart.com/workszoom/3667292/the-fifth-sacred-thing#/" rel="noopener noreferrer">The Fifth Sacred Thing by Jessica Perlstein</a></span></div>
   
   <div class="filter drop-shadow-xl text-white bg-black/50 p-4 col-span-2">
-    <h1 class="!text-5xl pb-4">Wellbeing Economics</h1>
-    <p>Meeting everyone's needs within the means of the planet.</p>
+    <h1 class="!text-5xl pb-4">Doughnut Economics</h1>
+    <p>Wellbeing for all within the means of the planet.</p>
   </div>
+</div>
+
+---
+
+<div class="h-[30rem] -mt-4 relative grid place-items-center">
+  <img src="/images/doughnut-economics-overview.png" class="h-full" alt="The Doughnut consists of a social foundation, to ensure that no one is left falling short on life’s essentials, and an ecological ceiling, to ensure that humanity does not collectively overshoot the planetary boundaries that protect Earth's life-supporting systems. The doughnut-shaped space between these boundaries is where humanity can thrive." />
+</div>
+
+---
+
+<div class="h-[30rem] -mt-4 relative grid place-items-center">
+  <img src="/images/doughnut-economics-out-of-balance.png" class="h-full" alt="A global Doughnut portrait of today's world, showing overshoot in several planetary boundaries, and shortfall for most social dimensions as well." />
 </div>
 
 ---
@@ -114,8 +103,6 @@ Take turns and ask follow-up questions. 5 min per person.
 <h2 class="pt-8">2. Which skills and perspectives do you want to contribute with?</h2>
 
 </v-click>
-
-
 
 
 <!--

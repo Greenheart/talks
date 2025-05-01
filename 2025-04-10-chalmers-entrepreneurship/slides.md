@@ -307,7 +307,7 @@ layout: default
 
 A democratic economy, closer to everyday life
 
-[Community wealth building](https://democracycollaborative.org/programs/cwb)
+[Community wealth building](https://www.democracycollaborative.org/community-wealth-building)
 
 Incentives for good work: [automony, mastery, purpose](https://www.youtube.com/watch?v=u6XAPnuFjJc)
 

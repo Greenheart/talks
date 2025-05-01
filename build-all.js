@@ -26,6 +26,7 @@ const ignoredFolders = [
     '2022-12-15-idg-toolkit-launch',
     '2023-05-08-chalmers-entrepreneurship',
     '2024-04-11-chalmers-entrepreneurship',
+    '2025-04-10-chalmers-entrepreneurship',
 ]
 const cwd = process.cwd()
 const basePath = 'talks'

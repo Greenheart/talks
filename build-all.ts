@@ -13,7 +13,7 @@ import { exec } from 'child_process'
 
 const execAsync = promisify(exec)
 
-const ignoredFolders = [
+const ignoredDirectories = [
     'node_modules',
     'dist',
     '.git',
@@ -37,12 +37,12 @@ const distPath = resolve(cwd, 'dist', basePath)
  *
  * Ignores unrelated directories and all files.
  *
- * @param {string} path the path where to get all talks from.
- * @returns {string[]} Array with names of all talks.
+ * @param path the path where to get all talks from.
+ * @returns Array with names of all talks.
  */
-async function getAllTalks(path) {
+async function getAllTalks(path: string) {
     const filesAndFolders = (await readdir(path)).filter(
-        (entry) => !ignoredFolders.includes(entry),
+        (entry) => !ignoredDirectories.includes(entry),
     )
 
     // Async filter function: https://stackoverflow.com/a/47095184/4183985
@@ -58,9 +58,9 @@ async function getAllTalks(path) {
 /**
  * Delete old build directory.
  *
- * @param {string} path Path to the old build directory.
+ * @param path Path to the old build directory.
  */
-async function deleteOldBuild(path) {
+async function deleteOldBuild(path: string) {
     try {
         await rm(path, { recursive: true })
     } catch (e) {
@@ -71,24 +71,24 @@ async function deleteOldBuild(path) {
 /**
  * Group all talks by year into an object.
  *
- * @param {string[]} talks Array of directory names matching the talks to build.
- * @returns {Map<string, string[]>} Object with all talks grouped by year.
+ * @param talks Array of directory names matching the talks to build.
+ * @returns Object with all talks grouped by year.
  */
-function getTalksByYear(talks) {
+function getTalksByYear(talks: string[]) {
     return talks.reduce((years, talk) => {
         const year = talk.slice(0, 4)
         years[year] = years[year] ? years[year].concat(talk) : [talk]
         return years
-    }, {})
+    }, {} as Record<string, string[]>)
 }
 
 /**
  * Get HTML string with links for a given year.
  *
- * @param {[string, string[]]} linksForYear Entry with all links for a given year.
- * @returns {string} HTML string with links for a given year.
+ * @param linksForYear Entry with all links for a given year.
+ * @returns HTML string with links for a given year.
  */
-function getLinksForYear([year, talks]) {
+function getLinksForYear([year, talks]: [string, string[]]) {
     const linksForYear = talks
         .map((talk) => `\n    <a href="/${basePath}/${talk}/">${talk}</a>`)
         .join('\n')
@@ -98,10 +98,10 @@ function getLinksForYear([year, talks]) {
 /**
  * Generate a simple index.html page to list all talks, grouped by year.
  *
- * @param {string[]} talks Array of directory names matching the talks to build.
- * @returns {Promise} Promise resolving when the index.html file has been written to storage.
+ * @param talks Array of directory names matching the talks to build.
+ * @returns Promise resolving when the index.html file has been written to storage.
  */
-async function buildIndexPage(talks) {
+async function buildIndexPage(talks: string[]) {
     const inputHTML = await readFile(resolve(cwd, 'index.html'), {
         encoding: 'utf-8',
     })
@@ -120,9 +120,9 @@ async function buildIndexPage(talks) {
 /**
  * Create a directory if it doesn't exist.
  *
- * @param {string} path The path of the directory to create if it doesn't exist.
+ * @param path The path of the directory to create if it doesn't exist.
  */
-async function ensureDirExists(path) {
+async function ensureDirExists(path: string) {
     try {
         await mkdir(path, { recursive: true })
     } catch (e) {
@@ -130,17 +130,14 @@ async function ensureDirExists(path) {
     }
 }
 
-const pluralize = (count, noun, suffix = 's') =>
-    `${count} ${noun}${count !== 1 ? suffix : ''}`
-
 /**
  * Build all talks and move them to the right place in the build output folder.
  *
- * @param {string[]} talks Array of directory names matching the talks to build.
- * @returns {Promise[]} Array of promises for each build happening concurrently.
+ * @param talks Array of directory names matching the talks to build.
+ * @returns Array of promises for each build happening concurrently.
  */
-async function buildAllTalks(talks) {
-    console.log(`Building ${pluralize(talks.length, 'talk')}...`)
+async function buildAllTalks(talks: string[]) {
+    console.log(`Building ${talks.length} talks...`)
     return Promise.all(
         talks.map(async (talk) => {
             const base = `/talks/${talk}/`
@@ -162,7 +159,7 @@ async function buildAllTalks(talks) {
 
 const UNWANTED_FILES = ['_redirects', '404.html']
 
-async function removeUnwantedFiles(distPath, talk) {
+async function removeUnwantedFiles(distPath: string, talk: string) {
     return Promise.all(
         UNWANTED_FILES.map((path) =>
             rm(`${distPath}/${talk}/${path}`, { force: true }),
@@ -179,7 +176,7 @@ async function copyRedirectPage() {
 
 /**
  * Build all talks and optionally include helper files to aid local development and deployment to GitHub Pages
- * @param {boolean} includeHelperFiles
+ * @param includeHelperFiles
  */
 async function buildAll(includeHelperFiles = false) {
     const [talks] = await Promise.all([
@@ -190,9 +187,9 @@ async function buildAll(includeHelperFiles = false) {
 
     await ensureDirExists(distPath)
 
-    const buildTasks = [buildAllTalks(talks)]
+    const buildTasks: Promise<any>[] = [buildAllTalks(talks)]
     if (includeHelperFiles) {
-        buildTasks.push(buildIndexPage(talks), copyRedirectPage(talks))
+        buildTasks.push(buildIndexPage(talks), copyRedirectPage())
     }
 
     await Promise.all(buildTasks)

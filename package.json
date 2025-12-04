@@ -6,7 +6,7 @@
     "type": "module",
     "author": "Samuel Plumppu",
     "scripts": {
-        "build": "node build-all.js"
+        "build": "node build-all.ts"
     },
     "prettier": {
         "tabWidth": 4,

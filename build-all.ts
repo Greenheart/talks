@@ -6,6 +6,7 @@ import {
     mkdir,
     copyFile,
     stat,
+    cp,
 } from 'fs/promises'
 import { resolve } from 'path'
 import { promisify } from 'util'
@@ -16,6 +17,7 @@ const execAsync = promisify(exec)
 const ignoredDirectories = [
     'node_modules',
     'dist',
+    'fonts',
     '.git',
     '.vscode',
     // Ignore old talks since they have already been published
@@ -137,24 +139,25 @@ async function ensureDirExists(path: string) {
  * @returns Array of promises for each build happening concurrently.
  */
 async function buildAllTalks(talks: string[]) {
-    console.log(`Building ${talks.length} talks...`)
+    console.log(`Building ${talks.length} talk(s)...`)
+
     return Promise.all(
         talks.map(async (talk) => {
             const base = `/talks/${talk}/`
-            const out = resolve(distPath, talk)
-            await rm(out, { force: true })
+            const outDir = resolve(distPath, talk)
+            await rm(outDir, { force: true })
             const { stderr, stdout } = await execAsync(
-                `cd ${talk} && pnpm run build --base ${base} --out ${out}`,
+                `cd ${talk} && pnpm run build --base ${base} --out ${outDir}`,
             )
 
             if (stderr) {
-                console.error(`❌ ${talk}\n\n${stderr}`)
+                console.error(`${talk}\n\n${stderr}`)
             }
             if (stdout) {
                 console.log(`✅ ${talk}`)
                 await Promise.all([
-                    removeUnwantedFiles(distPath, talk),
-                    cleanupTalk(distPath, talk),
+                    removeUnwantedFiles(outDir),
+                    cleanupTalk(outDir),
                 ])
             }
         }),
@@ -163,23 +166,40 @@ async function buildAllTalks(talks: string[]) {
 
 const faviconRegex = /<link rel="icon"(.*?)\/?>/gi
 
-async function cleanupTalk(distPath: string, talk: string) {
-    const file = await readFile(resolve(`${distPath}/${talk}/index.html`), 'utf-8')
+const replacementFonts = {
+    'https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@200;400;600&display=swap':
+        'helvetica-neue',
+}
 
-    return file
-        // Ensure the favicon is inherited from the website
-        .replaceAll(faviconRegex, '')
-        // Ensure fonts are GDPR compliant
-        .replaceAll('fonts.googleapis.com/css2', 'fonts.bunny.net/css')
+const fontsDir = resolve('fonts')
+
+async function cleanupTalk(outDir: string) {
+    const talkPath = resolve(`${outDir}/index.html`)
+    const rawHTML = await readFile(talkPath, 'utf-8')
+
+    let updatedHTML = rawHTML.replaceAll(faviconRegex, '') // Use inherited favicon
+
+    for (const [fontURL, replacement] of Object.entries(replacementFonts)) {
+        updatedHTML = updatedHTML.replaceAll(
+            fontURL,
+            `./fonts/${replacement}/${replacement}.css`,
+        )
+        // Copy the replacement font into the out dir for this talk
+        await cp(
+            resolve(fontsDir, replacement),
+            resolve(outDir, 'fonts', replacement),
+            {recursive: true },
+        )
+    }
+
+    await writeFile(resolve(talkPath), updatedHTML, 'utf-8')
 }
 
 const UNWANTED_FILES = ['_redirects', '404.html']
 
-async function removeUnwantedFiles(distPath: string, talk: string) {
+async function removeUnwantedFiles(outDir: string) {
     return Promise.all(
-        UNWANTED_FILES.map((path) =>
-            rm(`${distPath}/${talk}/${path}`, { force: true }),
-        ),
+        UNWANTED_FILES.map((path) => rm(`${outDir}/${path}`, { force: true })),
     )
 }
 

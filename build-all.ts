@@ -151,10 +151,25 @@ async function buildAllTalks(talks: string[]) {
             }
             if (stdout) {
                 console.log(`✅ ${talk}`)
-                await removeUnwantedFiles(distPath, talk)
+                await Promise.all([
+                    removeUnwantedFiles(distPath, talk),
+                    cleanupTalk(distPath, talk),
+                ])
             }
         }),
     )
+}
+
+const faviconRegex = /<link rel="icon"(.*?)\/?>/gi
+
+async function cleanupTalk(distPath: string, talk: string) {
+    const file = await readFile(resolve(`${distPath}/${talk}/`), 'utf-8')
+
+    return file
+        // Ensure the favicon is inherited from the website
+        .replaceAll(faviconRegex, '')
+        // Ensure fonts are GDPR compliant
+        .replaceAll('fonts.googleapis.com/css2', 'fonts.bunny.net/css')
 }
 
 const UNWANTED_FILES = ['_redirects', '404.html']

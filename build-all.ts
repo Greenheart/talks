@@ -26,7 +26,7 @@ const ignoredDirectories = [
     '2022-12-15-idg-toolkit-launch',
     '2023-05-08-chalmers-entrepreneurship',
     '2024-04-11-chalmers-entrepreneurship',
-    '2025-04-10-chalmers-entrepreneurship',
+    // '2025-04-10-chalmers-entrepreneurship',
 ]
 const cwd = process.cwd()
 const basePath = 'talks'
@@ -142,6 +142,7 @@ async function buildAllTalks(talks: string[]) {
         talks.map(async (talk) => {
             const base = `/talks/${talk}/`
             const out = resolve(distPath, talk)
+            await rm(out, { force: true })
             const { stderr, stdout } = await execAsync(
                 `cd ${talk} && pnpm run build --base ${base} --out ${out}`,
             )
@@ -163,7 +164,7 @@ async function buildAllTalks(talks: string[]) {
 const faviconRegex = /<link rel="icon"(.*?)\/?>/gi
 
 async function cleanupTalk(distPath: string, talk: string) {
-    const file = await readFile(resolve(`${distPath}/${talk}/`), 'utf-8')
+    const file = await readFile(resolve(`${distPath}/${talk}/index.html`), 'utf-8')
 
     return file
         // Ensure the favicon is inherited from the website

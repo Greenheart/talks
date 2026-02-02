@@ -96,13 +96,13 @@ Take turns and ask follow-up questions. 5 min per person.
 
 <v-click>
 
-<h2 class="pt-8">1. What's your vision for a sustainable future?</h2>
+<h2 class="pt-8">1. What is the purpose of the economy?</h2>
 
 </v-click>
 
 <v-click>
 
-<h2 class="pt-8">2. Which skills and perspectives do you want to contribute with?</h2>
+<h2 class="pt-8">2. What could happen if we changed the purpose of the economy?</h2>
 
 </v-click>
 

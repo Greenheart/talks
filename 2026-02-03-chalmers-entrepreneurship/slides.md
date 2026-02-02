@@ -419,13 +419,13 @@ layout: two-cols
 
 <v-click>
 
-<h2 class="pt-8">1. Two examples</h2>
+<h2 class="pt-8">1. Two companies</h2>
 
 </v-click>
 
 <v-click>
 
-<h2 class="pt-8">2. Exploring your business ideas</h2>
+<h2 class="pt-8">2. Exploring your ideas and business design</h2>
 
 </v-click>
 
@@ -470,6 +470,29 @@ image: ./images/subvert-fm.png
 - Transparent finances
 
 </v-clicks>
+
+---
+layout: two-cols
+---
+
+# Doughnut design for social innovations
+
+<v-click>
+
+<h2 class="pt-8">1. Visualise your business idea</h2>
+
+</v-click>
+
+<v-click>
+
+<h2 class="pt-8">2. Explore your business design</h2>
+
+</v-click>
+
+::right::
+
+<img src="./images/deep-design-of-business.jpg" class="w-full" alt="The deep design of business, shifting from 'How much value can we extract from this organisation?' to 'How many benefits can we generate through this organisation?'. This happens by re-designing how the organisation interacts with its purpose, networks, governance, ownership and finance">
+
 
 ---
 

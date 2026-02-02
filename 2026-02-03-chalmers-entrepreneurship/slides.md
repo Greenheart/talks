@@ -438,7 +438,7 @@ layout: image-right
 image: ./images/fairphone-6-repairable.webp
 ---
 
-# Fairphone
+# [Fairphone](https://www.fairphone.com/)
 
 **Repairable phones and accessories**
 
@@ -457,7 +457,7 @@ layout: image-right
 image: ./images/subvert-fm.png
 ---
 
-# Subvert.fm
+# [Subvert.fm](https://subvert.fm/)
 
 **Empowering artists in the digital economy**
 

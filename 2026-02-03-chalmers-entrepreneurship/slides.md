@@ -92,7 +92,7 @@ image: ./images/pexels-michael-block-3225517.jpg
 
 # Discuss in pairs:
 
-Take turns and ask follow-up questions. 5 min per person.
+Take turns and ask follow-up questions. 2 min per person.
 
 <v-click>
 

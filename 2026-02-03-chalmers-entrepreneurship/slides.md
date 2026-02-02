@@ -52,10 +52,8 @@ How can enterprise design enable social innovations?
 </v-click>
 
 ---
-
 layout: intro-image
 image: ./images/the-fifth-sacred-thing.jpg
-
 ---
 
 <div class="grid grid-cols-2 content-between h-full">
@@ -88,10 +86,8 @@ image: ./images/the-fifth-sacred-thing.jpg
 </div>
 
 ---
-
 layout: image-right
 image: ./images/pexels-michael-block-3225517.jpg
-
 ---
 
 # Discuss in pairs:
@@ -110,6 +106,7 @@ Take turns and ask follow-up questions. 5 min per person.
 
 </v-click>
 
+
 <!--
 
 
@@ -118,10 +115,11 @@ What if...
 
 - an economy that prioritised wellbeing for all within the means of the living planet?
 - 4 day work week
--
+- 
 
 
 -->
+
 
 <!--
 Good morning! I'm so excited to meet you, and hope we will have good discussions!
@@ -143,11 +141,10 @@ How many of you have heard of Doughnut Economics before? Raise your hands
 
 -->
 
----
 
+---
 layout: image-right
 image: ./images/pexels-michael-block-3225517.jpg
-
 ---
 
 # My journey since 2015
@@ -169,6 +166,7 @@ image: ./images/pexels-michael-block-3225517.jpg
 <div class="h-[30rem] -mt-4 relative grid place-items-center">
   <img src="/images/deep-design-of-business.jpg" class="h-full" alt="The deep design of business, shifting from 'How much value can we extract from this organisation?' to 'How many benefits can we generate through this organisation?'. This happens by re-designing how the organisation interacts with its purpose, networks, governance, ownership and finance" />
 </div>
+
 
 ---
 
@@ -237,19 +235,16 @@ image: ./images/pexels-michael-block-3225517.jpg
 </div>
 
 ---
-
 layout: intro-image
 image: ./images/pexels-frederico-erthal-3571576.jpg
-
 ---
 
 # Any questions so far?
 
----
 
+---
 layout: intro-image
 image: ./images/pexels-fauxels-3183165.jpg
-
 ---
 
 <div class="grid content-between h-full">
@@ -263,8 +258,8 @@ image: ./images/pexels-fauxels-3183165.jpg
 </div>
 
 ---
-
-## layout: default
+layout: default
+---
 
 <div class="grid grid-cols-2 h-full">
 
@@ -299,8 +294,8 @@ Growing demand among social enterprises and non-profits
 </div>
 
 ---
-
-## layout: default
+layout: default
+---
 
 <div class="grid grid-cols-2 h-full">
 
@@ -333,10 +328,8 @@ A systematic response to the challenges of the our time
 </div>
 
 ---
-
 layout: intro-image
 image: ./images/systems-awareness-iceberg.jpg
-
 ---
 
 <h2 class="text-black font-bold">System awareness iceberg</h2>
@@ -355,10 +348,8 @@ image: ./images/systems-awareness-iceberg.jpg
 </div>
 
 ---
-
 layout: image-right
 image: ./images/pexels-michael-block-3225517.jpg
-
 ---
 
 # Key insights from Greenheart Co-op
@@ -382,8 +373,8 @@ Apps are better as [platform co-operatives](https://platform.coop/)
 </v-clicks>
 
 ---
-
-## layout: default
+layout: default
+---
 
 <div class="grid grid-cols-2 h-full">
 
@@ -402,10 +393,8 @@ Apps are better as [platform co-operatives](https://platform.coop/)
 </div>
 
 ---
-
 layout: intro-image
 image: ./images/pexels-fauxels-3183165.jpg
-
 ---
 
 <div class="grid content-between h-full">
@@ -456,11 +445,11 @@ image: ./images/pexels-fauxels-3183165.jpg
   <img src="/images/de-ws-5.png" class="h-full" alt="" />
 </div>
 
----
 
+
+---
 layout: intro-image
 image: ./images/koen-emmers-Da1Wv-XC43k-unsplash.jpg
-
 ---
 
 <h2 class="!text-3xl text-black"><span class="p-2 bg-white/50">Like ripples on water</span></h2>
@@ -494,10 +483,8 @@ Let's create a wellbeing economy, for people and planet
 -->
 
 ---
-
 layout: intro-image
 image: ./images/pexels-frederico-erthal-3571576.jpg
-
 ---
 
 <div>

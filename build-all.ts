@@ -188,12 +188,14 @@ async function cleanupTalk(outDir: string) {
         await cp(
             resolve(fontsDir, replacement),
             resolve(outDir, 'fonts', replacement),
-            {recursive: true },
+            { recursive: true },
         )
     }
 
     if (updatedHTML.includes('fonts.googleapis.com')) {
-        console.error(`⚠️ New font that needs to be replaced. Open ${talkPath} for details`)
+        console.error(
+            `⚠️ New font that needs to be replaced. Open ${talkPath} for details`,
+        )
     }
 
     await writeFile(resolve(talkPath), updatedHTML, 'utf-8')

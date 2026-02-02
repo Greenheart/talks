@@ -9,6 +9,8 @@ colorSchema: light
 css: unocss
 drawings:
     persist: false
+seoMeta:
+    ogImage: auto # Automatically generates og-image from first slide
 ---
 
 <div class="grid grid-cols-2 content-between h-full">

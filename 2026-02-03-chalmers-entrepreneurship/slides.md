@@ -410,6 +410,68 @@ image: ./images/pexels-fauxels-3183165.jpg
 <!-- For the workshop, either explore your own ideas for social innovations, or think of a social enterprise (based on the examples) where we could increase the positive impact by changing the business design.  -->
 
 ---
+layout: two-cols
+---
+
+# Doughnut design for business
+
+**A practice and process - not a destination**
+
+<v-click>
+
+<h2 class="pt-8">1. Two examples</h2>
+
+</v-click>
+
+<v-click>
+
+<h2 class="pt-8">2. Exploring your business ideas</h2>
+
+</v-click>
+
+::right::
+
+<img src="./images/deep-design-of-business.jpg" class="w-full" alt="The deep design of business, shifting from 'How much value can we extract from this organisation?' to 'How many benefits can we generate through this organisation?'. This happens by re-designing how the organisation interacts with its purpose, networks, governance, ownership and finance">
+
+---
+layout: image-right
+image: ./images/fairphone-6-repairable.webp
+---
+
+# Fairphone
+
+**Repairable phones and accessories**
+
+<v-clicks>
+
+- Making phones and accessories last longer
+- 8 year software support - longest of all phone manufacturers as of 2026.
+- Spare parts and modular design, reducing e-waste
+- Fair and recycled materials
+- Better working conditions
+
+</v-clicks>
+
+---
+layout: image-right
+image: ./images/subvert-fm.png
+---
+
+# Subvert.fm
+
+**Empowering artists in the digital economy**
+
+<v-clicks>
+
+- A music platform co-op by and for artists
+- Direct sales of digital downloads, physical media and merch
+- Democratic decision-making
+- Collective ownership
+- Transparent finances
+
+</v-clicks>
+
+---
 
 <div class="h-[30rem] -mt-4 relative grid place-items-center">
   <img src="/images/de-ws-1.png" class="h-full" alt="" />

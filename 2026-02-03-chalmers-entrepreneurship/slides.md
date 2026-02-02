@@ -96,13 +96,13 @@ Take turns and ask follow-up questions. 2 min per person.
 
 <v-click>
 
-<h2 class="pt-8">1. What is the purpose of the economy?</h2>
+<h2 class="pt-8">1. Which stories do you think shape the current economy?</h2>
 
 </v-click>
 
 <v-click>
 
-<h2 class="pt-8">2. What could happen if we changed the purpose of the economy?</h2>
+<h2 class="pt-8">2. How do these stories influence businesses and organisations?</h2>
 
 </v-click>
 

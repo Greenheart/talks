@@ -8,6 +8,7 @@ A collection of some of my public talks and presentations.
 
 -   Create a new [Slidev](https://sli.dev/) presentation as a subdirectory in this repo.
 -   Make sure to name the directory for the talk with the format `YYYY-MM-DD-title-of-talk`, to ensure automated build process works as expected.
+-   Add the new talk (`YYYY-MM-DD-title-of-talk`) to [pnpm-workspace.yaml](./pnpm-workspace.yaml)
 -   Remove Netlify and Vercel config.
 -   Set `routerMode: hash` in the first frontmatter of `slides.md`, to configure the router to work well with page reloads for static deployments.
 -   Add final slide with image credits. See previous talks for formatting examples.
@@ -29,7 +30,6 @@ A collection of some of my public talks and presentations.
 ### Export talk as PDF
 
 Install `playwright-chromium` for the specific talk.
-
 
 ### Compress PDF to reduce file size
 

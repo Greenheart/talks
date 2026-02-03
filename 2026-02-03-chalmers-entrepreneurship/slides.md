@@ -431,7 +431,7 @@ layout: two-cols
 
 ::right::
 
-<img src="./images/deep-design-of-business.jpg" class="w-full" alt="The deep design of business, shifting from 'How much value can we extract from this organisation?' to 'How many benefits can we generate through this organisation?'. This happens by re-designing how the organisation interacts with its purpose, networks, governance, ownership and finance">
+<img src="/images/deep-design-of-business.jpg" class="w-full" alt="The deep design of business, shifting from 'How much value can we extract from this organisation?' to 'How many benefits can we generate through this organisation?'. This happens by re-designing how the organisation interacts with its purpose, networks, governance, ownership and finance">
 
 ---
 layout: image-right
@@ -491,7 +491,7 @@ layout: two-cols
 
 ::right::
 
-<img src="./images/deep-design-of-business.jpg" class="w-full" alt="The deep design of business, shifting from 'How much value can we extract from this organisation?' to 'How many benefits can we generate through this organisation?'. This happens by re-designing how the organisation interacts with its purpose, networks, governance, ownership and finance">
+<img src="/images/deep-design-of-business.jpg" class="w-full" alt="The deep design of business, shifting from 'How much value can we extract from this organisation?' to 'How many benefits can we generate through this organisation?'. This happens by re-designing how the organisation interacts with its purpose, networks, governance, ownership and finance">
 
 
 ---

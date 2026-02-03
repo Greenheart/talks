@@ -19,6 +19,7 @@ const ignoredDirectories = [
     'dist',
     'fonts',
     '.git',
+    '.zed',
     '.vscode',
     // Ignore old talks since they have already been published
     // This works around https://github.com/Greenheart/talks/issues/11
@@ -28,7 +29,8 @@ const ignoredDirectories = [
     '2022-12-15-idg-toolkit-launch',
     '2023-05-08-chalmers-entrepreneurship',
     '2024-04-11-chalmers-entrepreneurship',
-    // '2025-04-10-chalmers-entrepreneurship',
+    '2025-04-10-chalmers-entrepreneurship',
+    '2026-02-03-chalmers-entrepreneurship',
 ]
 const cwd = process.cwd()
 const basePath = 'talks'

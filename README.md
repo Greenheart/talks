@@ -15,13 +15,13 @@ A collection of some of my public talks and presentations.
 
 ## Scripts
 
--   `pnpm run build` - Build all talks and prepare a `dist` folder with all assets needed in the project root
+-   `pnpm build` - Build all talks and prepare a `dist` folder with all assets needed in the project root
 
 ### Update talks on webpage
 
 1. Ensure both projects exist in the same parent directory, e.g. `projects/`
 
-2. Build talks `pnpm run build`. Note that image URLs for `<img>` elements need to use absolute URLs starting with `/` instead of `./`. Images defined in frontmatter work with relative URLs though.
+2. Build talks `pnpm build`. Note that image URLs for `<img>` elements need to use absolute URLs starting with `/` instead of `./`. Images defined in frontmatter work with relative URLs though.
 
 3. Then run `cp -r dist/talks ../greenheart.github.io/static/`
 
